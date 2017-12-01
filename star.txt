@@ -1,0 +1,44 @@
+//js
+/*评分五角星*/
+	$.fn.star = function(o) {
+		var a = this;
+		var boxX=a.offset().left;
+		var boxY=a.offset().top;
+		a.mousemove(function(e){
+		  var x = e.pageX;
+		  var y = e.pageY;
+		  var zX=x-boxX;
+		  var zY=y-boxY;
+		  var w = Math.ceil(zX / 20) * 20;		  
+		  $(this).find('.stardlbox').css('width',w + '%');
+		  var pf = w * 5 / 100;
+		  $(o).val(pf);
+		});   
+	};	
+
+
+
+<script>
+  $('#star1').star('#sh1');
+  $('#star2').star('#sh2');
+  $('#star3').star('#sh3');
+});
+</script>
+
+
+//布局
+<input type="hidden" id="sh1" value="">
+<input type="hidden" id="sh2" value="">
+<input type="hidden" id="sh3" value="">
+<ul class="clearfix">
+                  <li class="comment_class ofh fl">
+                    <span class="fl mr20">我要评分</span>
+                    <span class="fl mr10">讲师授课态度</span><div class="fl star mr15" id="star1"><ul><li></li><li></li><li></li><li></li><li></li></ul><div class="pa stardlbox" style="width: 40%;"><dl><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl></div></div><i class="fl br_e9e9e9"></i>
+                  </li>
+                  <li class="comment_class ofh fl">
+                      <span class="fl mr10">讲师授课内容</span><div class="fl star mr15" id="star2"><ul><li></li><li></li><li></li><li></li><li></li></ul><div class="pa stardlbox" style="width: 40%;"><dl><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl></div></div><i class="fl br_e9e9e9"></i>
+                  </li>
+                  <li class="comment_class ofh fl">
+                      <span class="fl mr10">教学课堂气氛</span><div class="fl star mr15" id="star3"><ul><li></li><li></li><li></li><li></li><li></li></ul><div class="pa stardlbox" style="width: 100%;"><dl><dd></dd><dd></dd><dd></dd><dd></dd><dd></dd></dl></div></div>
+                  </li>
+                </ul>
