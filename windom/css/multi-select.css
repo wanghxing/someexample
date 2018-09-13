@@ -1,0 +1,96 @@
+@charset 'utf-8';
+
+.mCustomScrollbar {margin-bottom:10px;}
+.mCS-dark.mCSB_scrollTools .mCSB_draggerContainer{opacity:0;}
+.portletTable:hover .mCS-dark.mCSB_scrollTools .mCSB_draggerContainer{opacity:1;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft, .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight { display:none;}
+.portletTable:hover .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,.portletTable:hover .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight { display:block;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{top:50%;/*margin-top:-20px;*/ width:30px;height:40px;background:url(../images/mCSB_button.png) no-repeat right center;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft{top:50%;/*margin-top:-20px;*/ width:30px;height:40px;background:url(../images/mCSB_button.png) no-repeat left center;}
+.mCSB_inside > .mCSB_container{margin-right:0px;}
+.mCSB_scrollTools{width:4px;right: -1px;background: rgba(255,255,255,0);opacity: 0;
+filter: alpha(opacity=0);}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight{opacity:0.1;z-index:2;}
+.mCSB_scrollTools .mCSB_buttonUp:hover, .mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover{opacity: 0.4;filter: "alpha(opacity=4)";-ms-filter: "alpha(opacity=4)";}
+.mCS-dark-2.mCSB_scrollTools {width:4px;}
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail{background:rgba(0,0,0,0.0)}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background:rgba(204,204,204,1);border-radius:2px!important;-moz-border-radius:2px!important;-webkit-border-radius:4px!important;}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background:#aaaaaa; }
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:4px;}
+
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{background-color: rgba(100, 100, 100, 0.5);}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #999;
+    
+    filter: "alpha(opacity=5)";
+    -ms-filter: "alpha(opacity=5)";
+}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0);
+    filter: "alpha(opacity=0)";
+    -ms-filter: "alpha(opacity=0)";
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: -3px;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+/*多级下拉菜单*/
+.multiDrop {position:relative;}
+.dropText {position:relative; border:1px #ccc solid; height:30px; line-height:30px; overflow:hidden; padding:0 10px; color:#666; cursor:pointer;}
+.dropText i {position:absolute; width:28px; height:28px; right:0px; top:0px; background:#FFF url(../plugins/chosen/img/up_down_btn2.png) no-repeat center center;}
+.multiOpen .dropText i {background-image:url(../plugins/chosen/img/up_down_btn.png);}
+.multiOpen .dropText {border-color:#58abe0;}
+.dropList {position:absolute; left:0; top:29px; z-index:200; width:360px; display:none;}
+.multiOpen .dropList {display:block;}
+.dropItemCase {border:1px #ccc solid; background:#FFF; max-height:180px;}
+.dropList li {line-height:30px;}
+.dropItem {padding:0 10px; position:relative; cursor:pointer;}
+.dropItem {overflow:hidden;}
+.dropItem:hover {background:#58ade1; color:#FFF;}
+.dropItem em {margin:0 25px 0 0;}
+.dropItem .dropArrow {position:absolute; width:30px; height:30px; right:0; bottom:0; text-align:center;}
+.dropItem i {color:#ccc; font-size:12px;}
+.dropItem:hover i {color:#FFF;}
+.dropUl ul {display:none;}
+.dropUl ul .dropItem {padding-left:25px;}
+.dropUl ul ul .dropItem {padding-left:40px;}
+.dropUl ul ul ul .dropItem {padding-left:55px;}
+.dropUl ul ul ul ul .dropItem {padding-left:70px;}
+.multiOpen .dropItemCase {border-color:#58abe0; border-bottom:1px #e4e4e4 solid;}
+.cascadeEdit .dropList {width:100%;}
+.cascadeEdit .dropItemCase {border-top:0;}
+.cascadeEdit .dropItem em { margin:0;}
+.cascadeEdit.multiOpen .dropItemCase { border-color:#58abe0;}
+.user-meg .dropList li, .user-meg-edit .dropList li { float:none; margin:0;}
+.dropItem div.checker {margin-left:0;}
+.dropItem div.checker {float: left;top: 9px;}
+.checkDrop .dropItemCase {border-color:#58abe0; border-top:0; border-bottom:1px #e4e4e4 solid;}
+.dropSubmit {border:1px #58abe0 solid; border-top:0; text-align:right;background-color:#fff;}
+.dropBtn {margin:7px 10px 7px 0; width:60px; height:25px; border:0; background:#177bbb; color:#FFF; border-radius:3px!important; text-align:center;}
+.dropBtn:hover {background:#58ade1;}
+.dropBtn:active {background:#0367a7;}
+
+.dropText span,.dropItem .txt{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:26px;}
+.dropItem .txt{margin-right:15px;}
+.multiDropTree .mCustomScrollbar{margin-bottom:0;}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}

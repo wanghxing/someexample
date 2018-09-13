@@ -1,0 +1,64 @@
+
+.elfTree{
+	width:200px;
+	position:relative;
+}
+.elfTree .showInitial{
+	cursor: default;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	padding:0 20px 0 10px;
+	border:1px solid #ccc;
+	position:relative;
+	color:#ccc;
+}
+
+.elfTree-open .showInitial{
+	border-color:#58abe0;
+}
+
+.elfTree ul{
+	background:#fff;
+	border:1px solid #58abe0;
+	position:absolute;
+	width:150px;
+	overflow-y: hidden;
+	display:none;
+}
+
+.elfTree ul li{
+	height:28px;
+	line-height:28px;
+	padding:0 10px;
+}
+.elfTree ul li a{
+	display:block;
+	height:28px;
+	line-height:28px;
+	overflow:hidden;
+	
+}
+.elfTree .level1 ul{
+	
+	border-top:0 none;
+	margin-top:-1px;
+
+}
+
+.elfTree .showInitial span { color:#666;}
+.elfTree .showInitial i{
+	position:absolute;
+	right:10px;
+	top:0;
+}
+
+
+
+
+.elfTree li:hover{
+	background:#58abe1;
+	color:#fff;
+}
+
+.elfTree .mCSB_inside > .mCSB_container {margin-right:0!important;}

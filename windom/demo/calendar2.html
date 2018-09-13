@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>日历</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style>
+  .btnBox {padding:20px;}
+</style>
+</head>
+<body style="background:#eee">
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<h2 class="p20 f16 c_333 fb">日历样式 如下：</h2>
+
+<div class="p20">
+  <p class="fb mb10">1. 日历平面显示</p>
+  <div id="date_picker"> </div>
+
+  <p class="fb mb10 mt20">2. 时间点</p>
+  <p class="mt20 ml15">精确到天</p>
+  <div class="calendarWrap clearfix">
+    <div id="coursesStartdiv" class="fl divstart ml10 pr">
+      <input type="text" id="startTime" name="startTime" readonly class="inputText iw150 fl" placeholder="提交时间" sDateName="isDate"
+        onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" />
+      <i class="pa fa fa-calendar c_999" sDateName="isDate"></i>
+    </div>
+  </div>
+  <p class="mt20 ml15">精确到分</p>
+  <div class="calendarWrap clearfix">
+    <div id="coursesStartdiv" class="fl divstart ml10 pr">
+      <input type="text" id="startTime" name="startTime" readonly class="inputText iw150 fl" placeholder="提交时间" sDateName="isDate"
+        onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'});" />
+      <i class="pa fa fa-calendar c_999" sDateName="isDate"></i>
+    </div>
+  </div>
+  <p class="mt20 ml15">精确到天，隐藏清空按钮</p>
+  <div class="calendarWrap clearfix">
+    <div id="coursesStartdiv" class="fl divstart ml10 pr">
+      <input type="text" id="startTime" name="startTime" readonly class="inputText iw150 fl" placeholder="提交时间" sDateName="isDate"
+        onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false,readOnly:true});" />
+      <i class="pa fa fa-calendar c_999" sDateName="isDate"></i>
+    </div>
+  </div>
+  
+  <p class="fb mb10 mt20">3. 时间段</p>
+  <div class="calendarWrap clearfix">
+    <div id="coursesStartdiv" class="fl divstart ml10 pr">
+      <input type="text" id="startTime" name="startTime" readonly class="inputText iw150 fl" placeholder="提交时间" sDateName="isDate"
+        onclick="var endTime=$dp.$('endTime'); WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',onpicked:function(){endTime.click();}});" />
+      <i class="pa fa fa-calendar c_999" sDateName="isDate"></i>
+    </div>
+    <span class="fl ml10 lh30 c_999">至</span>
+    <div id="coursesEnddiv" class="fl divstart ml10 pr">
+      <input type="text" id="endTime" name="endTime" readonly class="inputText iw150 fl" placeholder="提交时间" sDateName="isDate"
+        onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'});" />
+      <i class="pa fa fa-calendar c_999" sDateName="isDate"></i>
+    </div>
+  </div>
+
+
+  <p class="fb mt30">具体参考：http://www.my97.net/demo/index.htm</p>
+
+  
+
+</div>
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../plugins/My97DatePicker/WdatePicker.js"></script>
+<script>
+WdatePicker({eCont:'date_picker',onpicked:function(dp){
+ // alert('你选择的日期是:'+dp.cal.getDateStr())
+ }
+});
+</script>
+</body>
+</html>

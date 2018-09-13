@@ -1,0 +1,550 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>视频插入测试</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/lms/lms_style.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<link rel="stylesheet" type="text/css" href="../plugins/scrollBar/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="css/insertTest.css">
+<link rel="stylesheet" type="text/css" href="css/insertTest-wisdom.css">
+<script src="http://s.prcedu.com/eduplayer.lib.js"></script>
+</head>
+
+<body class="StudyBody">
+   
+   
+   <div class="maCenter clearfix">
+      <div class="H1Title clearfix">
+        <span class="fl">计算机实用技能与进阶提高</span>
+        <span class="fr vback"><a href=""><i class="cedu-Return"></i></a></span>
+      </div>
+      <div class="clearfix pr s_Box">
+          <!-- 活动图标 -->
+          
+          <div class="clearfix StudyVideo">
+            <h2 class="clearfix">
+              <div class="fl typeIcon"><i class="fl cedu-questionnaire"></i></div>
+              <span class="fl title">文科专业计算机基础课程</span>
+              <span class="fr">
+                <a href="javascript:;" class="animateBtn raised clickable pr fl pl20 lineBtnw120 lineMajorButton linegrayBtn closeAddtest">
+                  <input class="toggle" type="checkbox"/>
+                  <div class="anim"></div><span>关闭添加测试</span>
+                </a>
+                <!-- <span class="fl pl20"><a href="javascript:;" class="agree"><i class="fa fa-thumbs-o-up"></i></a></span> -->
+              </span>
+            </h2>
+            <!-- 新增测试 -->
+            <div class="newTestBox clearfix">
+              <div class="clearfix">
+                <div class="fl videobox ovh clearfix"><div class="fl flv" id="video" style="width:100%;"></div></div>
+                <!-- 选题型 -->
+                <div class="fl testType ml10">
+                  <div class="topTitrow clearfix">
+                    <h4 class="fl tit">单选</h4>
+                    <!-- <ul class="fr testtypeTab">
+                      <li class="cur">单选<div class="bomline"></div></li>
+                      <li>多选<div class="bomline"></div></li>
+                    </ul> -->
+                  </div>
+                  <!-- 单选内容 -->
+                  <div class="testypeCon testtypeCon-single">
+                    <div class="inputTest">
+                      <div class="clearfix">
+                         <textarea type="text" class="multiRowText mh100 fl" placeholder="请输入题干内容">议论文体中，形式变化最多，灵活性最大， 因此也被视为议论性散文的是</textarea>
+                      </div>
+                    </div>
+                    <div class="listTest pr scrolbar scrolbarStyle">
+                      <div class="test-main">
+                          <ul class="t-list">
+                            <li class="t-item">
+                                <!-- <span class="radio-box fl"><i class="fl fa fa-dot-circle-o f18 c_58abe1 radio" name="radio_qy"><input type="radio" name="status"></i></span> -->
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1">选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1选项1</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项2">选项2</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项3">选项3</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项4">选项4</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项5">选项5</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项6">选项6</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项7">选项7</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项8">选项8</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项9">选项9</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                            <li class="t-item">
+                                <span class="radio-box fl"><i class="fl fa fa-circle-o f18 c_ccc radio" name="radio_qy"><input type="radio" name="status"></i></span>
+                                <div class="fl t-show" style="width:89%">
+                                  <label class="t-opt testoptCon" title="选项10">选项10</label>
+                                  <div class="clear"></div>
+                                  <div class="fr test-smtool">
+                                      <div class="test-smicons">
+                                          <a href="###" class="fl mr10 fa fa-arrow-up tc up"></a>
+                                          <a href="###" class="fl mr10 fa fa-arrow-down tc down"></a>
+                                          <a href="###" class="fl mr10 fa fa-edit tc edit"></a>
+                                          <a href="###" class="fl fa fa-trash-o tc del"></a>
+                                      </div>
+                                  </div>
+                                </div>
+                                <!-- 编辑 -->
+                                <div class="fl t-edit none">
+                                  <textarea type="text" nature="edit" class="multiRowText t-area mh100 fl" placeholder="">请编辑选项内容</textarea>
+                                </div>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <!-- end listTest -->
+                    <button class="animateBtn raised clickable pr btnw100 linegraBtn addOptBtn ml15">
+                      <input class="toggle" type="checkbox"/>
+                      <div class="anim"></div><span><i class="f16 mr6 cedu-add"></i>增加选项</span>
+                    </button>
+                    <div class="clearfix setvideoTime">
+                        <label for="" class="fl ml40 mr10 playQues f14 lh30">视频播放至：</label>
+                        <div class="fl clearfix time_try f14">
+                          <span class="fl c_333">
+                            <input type="text" class="c_333 mr10 f14 tBox" placeholder="00">时
+                            <input type="text" class="c_333 mr10 ml10 f14 tBox" placeholder="00" value="12">分
+                            <input type="text" class="c_333 mr10 ml10 f14 tBox" placeholder="00" value="15">秒
+                          </span>
+                        </div>
+                    </div>
+                    <div class="addTestTools ml20 mr20 mb18 clearfix">
+                      <div class="fl ml3 mr8 ansCheck needAnswerCheck"><span class="label-checkbox fl"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>必答题</div>
+                      <div class="fl ml3 mr8 ansCheck answerJXcheck"><span class="label-checkbox fl"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>是否显示答案</div>
+                      <div class="fr">
+                        <button class="animateBtn raised clickable pr fl btnw80 majorButton grayBtn delEditBtn mr10">
+                          <input class="toggle" type="checkbox"/>
+                          <div class="anim"></div><span>取消</span>
+                        </button>
+                        <button class="animateBtn raised clickable pr fl btnw80 majorButton graBtn okEditBtn">
+                          <input class="toggle" type="checkbox"/>
+                          <div class="anim"></div><span>确定</span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <!-- 测试轴 -->
+              <div class="bomtestdots clearfix">
+                <!-- 单选-测试点 -->
+                <dl class="clearfix testdotslist single-testdots"> <!-- dd所有内容 开发时可去 -->
+                  <dd class="first">
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                  <dd>
+                    <div class="close j-close none"><img src="images/testdot-close.png"></div>
+                    <div class="pic"></div>
+                    <div class="verLine"></div>
+                    <div class="dot"><img src="images/testdot-dot.png"></div>
+                    <div class="time">00:00:34</div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <!-- end newTestBox -->
+          </div>
+
+      </div>
+   </div>
+   <!-- end maCenter -->
+
+    <!-- 右侧对应功能菜单 复杂版 增加ToolMore样式 -->
+    <!-- <div class="RightTool ToolMore">
+      <span class="sidebarCata">
+          <a class="SectionIcon hasone" href="javascript:;"><i class="fa fa-bars"></i></a>
+      </span>
+      <div class="bottomTool">
+        <a class="Prev" href="javascript:;"><i class="fa fa-chevron-left"></i></a>
+        <a class="Next" href="javascript:;"><i class="fa fa-chevron-right"></i></a>
+        <a class="Top" href="javascript:;"><i class="fa fa-chevron-up"></i></a>
+      </div>
+    </div> -->
+
+<div class="insertTipmeg p20 hand f18 c_fff">(点击看提示信息弹窗)</div>
+
+</body>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../plugins/scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/lhgdialog/lhgdialog.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="js/inserttest.js"></script>
+<script>
+$(function() {
+
+  // 测试点
+  $('body').on('click', '.testdotslist dd', function(){
+    var $this = $(this);
+    $this.addClass('active').siblings('dd').removeClass('active');
+  });
+
+  /* 删除测试点 */
+  $('body').on('click', '.testdotslist .j-close', function(event){
+    event.stopPropagation();
+    event.preventDefault();
+    var $this = $(this);
+    $this.parent().remove();
+
+  });
+
+  // 修改 确定按钮 非模态提示
+  $('.okEditBtn').click(function() {
+    $.testrecTips('修改成功',200,'success');
+    // $.testrecTips('修改失败',2,'fail');
+  });
+
+  // 选项字数控制
+  $.textctrl = function(){
+    $('body').find('.listTest li .t-opt').each(function(){
+      var t_h = $(this).height();
+      var moreHideDot ='<em class="morehidedot">...</em>';
+      if(t_h > 60) {
+        $(this).addClass('dfh');
+        $(this).append(moreHideDot);
+      }
+    })
+  }
+  $.textctrl();
+
+  // 滚动条
+  $('.testypeCon').find('.scrolbar').mCustomScrollbar({
+    scrollInertia:200,
+    theme:'dark-2'
+  });
+
+  /* ----视频页面布局等------- */
+  var wh,vh,ch,bw,vw,conqtH;
+    wh = $(window).height() < 974 ? 974 : $(window).height();
+    vh = wh - 225 - 40 - 127;
+    bw = $('.newTestBox').width();
+    vw = bw - 370;
+    conqtH = $('.testType .topTitrow').outerHeight() + $('.inputTest').outerHeight() + $('.addOptBtn').outerHeight() + $('.setvideoTime').outerHeight() + $('.addTestTools').outerHeight() + 45;
+
+    var initW = $('.videobox').width();
+    var createVideo = function (containerId) {
+        //创建播放器
+        eduplayer.create(containerId, {
+            autoplay: false,
+            width: initW,
+            height: vh
+        }, function () {
+      $('.videobox').find('#video_video').css({width:vw + 'px',height:vh + 'px'});
+            //设置播放的视频url
+            eduplayer.setVideoUrl(containerId, 'http://d.chinaedu.net/xuexi/publish/video_s/1508/150831/408c55d6fc3441c58fad1a5ce87507bc/408c55d6fc3441c58fad1a5ce87507bc_hq.m3u8');
+            //可以给特定播放器添加事件
+            eduplayer.getPlayer(containerId).on('loadedmetadata', function (even) {
+                eduplayer.log('loadedmetadata');
+                eduplayer.getPlayer(containerId).play();
+            });
+        });
+    };
+    
+
+    $.video2 = function(){
+      wh = $(window).height() < 974 ? 974 : $(window).height(); /* 1366高度过小 内容放不下 屏幕高度设置成定值974 */
+
+      vh = wh - 225 - 40 -127;
+      ch = wh - 20;
+      $('.videobox').find('.flv').css('height',vh+'px');
+      $('.videobox').find('#video_video').css({width:vw + 'px',height:vh + 'px'});
+      $('.testType').css({'height':vh + 'px'});
+
+      $('.listTest').css('height',(vh-conqtH) +'px');
+    };
+    $.video2();
+    createVideo('video');
+
+    $(window).resize(function() {
+      $.video2();
+      createVideo('video');
+    });
+
+    
+});
+
+/* 提示信息弹窗 */
+$('.insertTipmeg').on('click',function(){
+   $.dialog({
+      content: 'url:pop-insertTipmeg.html',
+      title:'提示信息',
+      ok: true,
+      okVal:'确定',
+      cancel: true,
+      cancelVal: '取消',
+      width:400,
+      height:75,
+      lock:true
+   });
+});
+
+
+</script>
+</html>

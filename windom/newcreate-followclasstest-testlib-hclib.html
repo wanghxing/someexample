@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>新建随堂练-智慧云课堂</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="plugins/chosen/chosen.css" />
+<link rel="stylesheet" type="text/css" href="css/reset_base.css">
+<link rel="stylesheet" href="plugins/scrollBar/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--注： multiDropCheck.css放style.css下面 -->
+<link rel="stylesheet" href="plugins/uniform/css/uniform.default.css" />
+<link rel="stylesheet" type="text/css" href="css/multiDropCheck.css">
+
+</head>
+<body>
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<div class="topBarWrap tc" id="topBarWrap">
+    <div class="main clearfix pr">
+       <a href="#" class="to-back ml10 pa"><i class="fa fa-chevron-circle-left mr5"></i>返回</a> 
+       <h2>题库</h2>
+    </div>
+</div>
+<!-- topBar -->
+<div class="bg_fff clearfix con-sdw">
+    <div class="main pr clearfix searchPack">
+        <ul class="fl subnav resourcesNav">
+            <li class=""><a href="javascript:;">我的题库</a></li>
+            <li class=""><a href="javascript:;">本校题库</a></li>
+            <li class="cur"><a href="javascript:;">弘成题库</a></li>
+        </ul>
+    </div>    
+</div>
+
+<div class="main mt30 followclassTest clearfix stl-followclassTest">
+    <div class="categoryBlock clearfix mb20 con-sdw searchWrapBlock">
+        <div class="fl classify courseSelect mr50">
+            <label for="" class="fl mr10 lh30">题型:</label>
+            <div class="fl">
+              <select data-placeholder="" class="form-control select-default w100">
+                  <option value="-1"></option>
+                  <option value="0">单选</option>
+                  <option value="1">多选</option>
+                  <option value="2">填空</option>
+                  <option value="3">复合</option>
+                  <option value="4">判断</option>
+              </select>
+            </div>
+        </div> 
+        <div class="fl classify classSelect mr50">
+            <label for="" class="fl mr10 lh30">难度:</label>
+            <div class="fl">
+              <select data-placeholder="" class="form-control select-default w100">
+                  <option value="-1"></option>
+                  <option value="0">容易</option>
+                  <option value="1">较易</option>
+                  <option value="2">中等</option>
+                  <option value="1">较难</option>
+                  <option value="2">困难</option>
+              </select>
+            </div>
+        </div>
+        <div class="fl multiCheckParJs"> <!-- 多级下拉 此样式 multiCheckParJs 必须加在dropCheckInit的父级 -->
+            <label for="" class="fl mr10 lh30">课程:</label>
+            <div class="fl multiDrop checkDrop dropCheckInit w100 mr60">
+                <input type="hidden" class="storage" value="001001" />
+            </div> 
+        </div> 
+        <div class="fl pr searchDiv">
+            <input type="text" class="inputText iw200" placeholder="请输入搜索内容">
+            <a href="javascript:;" class="searchBtn"><i class="fl fa fa-search search_i"></i></a>
+        </div>           
+        
+    </div>
+    <!-- end searchWrapBlock --> 
+    
+    <!-- 题型 -->
+    <div class="clearfix mt10 JS-checkBlock">
+        <div class="testsMainWrap mb10">
+            <div class="testTit clearfix">
+                <div class="fl test-all checkBoxJs">
+                  <div class="fl clearfix checkAllOpt con-sdw mr20 testCheckAll">
+                      <span class="label-checkbox levelAll-checkbox"><input name="checked-all" type="checkbox" class="checkbox checked-all"><i class="checkbox-i j-checkbox-i j-checked-all-i"></i></span>
+                      <span class="check-all-text">全选</span>
+                  </div> 
+                  <div class="fl dataAll ml10">共<span class="num">5</span>项数据</div>
+                </div>
+                <div class="fr sortBtn">
+                    <a href="javascript:;" class="pr groupTestsTimes" >组卷次数<span><i class="fa fa-caret-up upBtn"></i><i class="fa fa-caret-down downBtn"></i></span></a>
+                    <a href="javascript:;" class="pr ml30 createTime" >创建时间<span><i class="fa fa-caret-up upBtn"></i><i class="fa fa-caret-down downBtn"></i></span></a>
+                    <a href="javascript:;" class="pr ml30 hardLevel" >难度<span class="up"><i class="fa fa-caret-up upBtn"></i><i class="fa fa-caret-down downBtn"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <!-- end testsMainWrap -->
+        <!-- 单选 -->
+        <div class=" clearfix content_c_quiz test-part test-part-quiz question_quiz singleOpt mb10 js-testbox" >
+            <div class="testTitWrap clearfix mb10">
+                <span class="label-checkbox"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>
+                <span class="f17 b5 fl  fb test_tittle_quiz_icon mr15">单选题</span>
+                <span class="test_tittle_quiz testClick">I live in a flat in a building. The building is very modern. There are about ten floors and I live on the top floor. I think my flat is very wonderful. The dining room is next to the kitchen. We always have dinner there, and my mother often cooks some delicious food for us. I can t cook, but I often help Mum wash the dishes. Sometimes my friends come to my flat and they teach me how to cook.</span>
+                <span class="fl sc">（5分）</span>
+                
+            </div>
+            <dl class="list f13 c_ti">
+              <dd class="cur c_ti f13 clearfix ">
+                <span class="f18 r-box fl "><i class="fl" name="radio_qy">a</i><input type="radio" name="status21"></span>
+                <var class="fl ml10 opt-per">I live in a flat in a building. The building is very modern. There are about ten floors and I live on the top floor. I think my flat is very wonderful. The dining room is next to the kitchen. We always have dinner there, and my mother often cooks some delicious food for us. I can t cook, but I often help Mum wash the dishes. Sometimes my friends come to my flat and they teach me how to cook.</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">b</i><input type="radio" name="status21"></span>               
+                <var class="fl ml10 opt-per">I live in a flat in a building. The building is very modern. There are about ten floors and I live on the top floor. I think my flat is very wonderful. The dining room is next to the kitchen.</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">c</i><input type="radio" name="status21"></span>
+                <var class="fl ml10 opt-per">I live in a flat in a building. The building is very modern. There are about ten floors and I live on the top floor. I think my flat is very wonderful. The dining room is next to the kitchen.</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">d</i><input type="radio" name="status21"></span>              
+                <var class="fl ml10 opt-per">I live in a flat in a building. The building is very modern. There are about ten floors and I live on the top floor. I think my flat is very wonderful. The dining room is next to the kitchen.</var>
+              </dd>
+            </dl>
+            <div class="msg clearfix quiz_sol">
+              <p class="jeixi">
+                  <span class="person5 color4A4A4A fb f14">答案</span>
+                  <span class="person3 f14 fb ans-right">B</span>
+              </p>
+              <p class="jeixi cleaarfix">
+                <span class="person5 color4A4A4A f14 fb lh_18">解析</span> 
+                <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+              </p>                          
+            </div>
+            <div class="knowpoint mt15">
+                <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+            </div>
+        </div>
+        <!-- 多选 -->
+        <div class=" clearfix content_c_quiz test-part test-part-quiz question_quiz multiOpt mb10 js-testbox" >
+            <div class="testTitWrap clearfix mb10">
+                <span class="label-checkbox"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>
+                <span class="f17 b5 fl fb test_tittle_quiz_icon mr15">多选题</span>
+                <span class="test_tittle_quiz testClick">下述有关肝淤血的记述中，哪一项是错误的？</span>
+                <span class="fl sc">（5分）</span>
+            </div>
+            <dl class="list f13 c_ti">
+              <dd class="cur c_ti f13 clearfix">
+                <span class="f18 r-box fl "><i class="fl" name="radio_qy">a</i><input type="radio" name="status21"></span>
+                <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">b</i><input type="radio" name="status21"></span>               
+                <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">c</i><input type="radio" name="status21"></span>
+                <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+              </dd>
+              <dd class="clearfix">
+                <span class="f18 r-box fl "><i class="fl " name="radio_qy">d</i><input type="radio" name="status21"></span>              
+                <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+              </dd>
+            </dl>
+            <div class="msg clearfix quiz_sol">
+              <p class="jeixi">
+                  <span class="person5 color4A4A4A fb f14">答案</span>
+                  <span class="person3 f14 fb ans-right">B</span><span class="person3 f14 fb ans-right">C</span>
+              </p>
+              <p class="jeixi cleaarfix">
+                <span class="person5 color4A4A4A f14 fb lh_18">解析</span> 
+                <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+              </p>                          
+            </div>
+            <div class="knowpoint mt15">
+                <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+            </div>
+        </div>
+        <!--判断题-->
+        <div class=" clearfix check content_c_quiz test-part test-part-quiz question_quiz judgeTest mb10 js-testbox" >
+            <div class="clearfix mb12">
+                <span class="label-checkbox"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>
+                <span class="f17 b5 fl fb test_tittle_quiz_icon mr15">判断题</span>
+                <span class="test_tittle_quiz testClick">下述有关肝淤血的记述中，哪一项是错误的？</span>
+                <span class="fl sc">（5分）</span>
+            </div> 
+            <dl class="list f13 c_ti">
+             <dd class="cur c_ti f13 clearfix">
+                <span class="f16 r-box_chose fl "><i class="fl chose-opt" name="radio_qy">正确</i></span>
+                <span class="f16 r-box_chose fl "><i class="fl chose-opt" name="radio_qy">错误</i></span>
+             </dd>
+            </dl>
+            <div class="msg clearfix quiz_sol">
+              <p class="jeixi">
+                  <span class="person5 color4A4A4A fb f14">答案</span>
+                  <span class="person5 f14 fb ans-right">正确</span>
+              </p>
+              <p class="jeixi cleaarfix">
+                <span class="person5 color4A4A4A f14 fb  lh_18">解析</span> 
+                <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+              </p>                          
+            </div>
+            <div class="knowpoint mt15">
+                <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+            </div>
+        </div>
+        <!--填空题-->
+        <div class=" clearfix check content_c_quiz test-part test-part-quiz question_quiz fillSpaces mb10 js-testbox" >
+            <div class="clearfix mb12">
+                <span class="label-checkbox"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>
+                <span class="f17 b5 fl fb test_tittle_quiz_icon mr15">填空题</span>
+                <span class="test_tittle_quiz testClick">什么馅儿的月饼好吃？是__<q>1</q>__的鲜花月饼__<q>2</q>__的咸蛋月饼，最好吃，月饼就要吃咸的，拒绝甜月饼，从我做起。</span>
+                <span class="fl sc">（5分）</span>
+            </div> 
+            <dl class="list f13 c_ti none"> 
+            </dl>
+            <div class="msg clearfix quiz_sol">
+             <p class="jeixi">
+              <p class="person5 color4A4A4A fb f14 disinb">答案</p>
+              <p class="  f14 fb color5E6D82 disinb mr20"><span class="chobgq ans-right">1</span>弘成</p>
+               <p class=" f14 fb color5E6D82 disinb"><span class="chobgq ans-right">2</span>教育</p>
+              </p>
+              <p class="jeixi cleaarfix">
+                <span class="person5 color4A4A4A f14 fb lh_18">解析</span> 
+                <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+              </p>                        
+            </div>
+            <div class="knowpoint mt15">
+                <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+            </div>
+        </div>
+        <!--复合题-->
+        <div class=" clearfix content_c_quiz test-part test-part-quiz question_quiz compoundTest js-testbox" >
+            <div class="bigtitCon clearfix mb25">
+              <span class="fl label-checkbox"><input name="checkbox" type="checkbox" class="checkbox"><i class="checkbox-i j-checkbox-i"></i></span>
+              <span class="f17 b5 fl fb test_tittle_quiz_icon">复合题</span>
+              <div class="fl conBox testClick">
+                In the United States, it is not customary to telephone someone very early in the morning. If you telephone him early in the day, while he is shaving or having breakfast, the time of the call shows that the matter is very important and requires immediate attention. The same meaning is attached to telephone calls made after 11:00 pm. If someone receives a call during sleeping hours, he assumes it's a matter of life or death. The time chosen for the call communicates its importance.
+                In social life, time plays a very important part. In the U.S.A. guests tend to feel they are not highly regarded if the invitation to a dinner party is extended only three or four days before the party date. But it is not true in all countries. In other areas of the world, it may be considered foolish to make an appointment too far in advance because plans which are made for a date more than a week away tend to be forgotten. The meaning of time differs in different parts of the world. Thus, misunderstandings arise between people from different cultures that treat time differently. Promptness is valued highly in American life, for example. If people are not prompt, they may be regarded as impolite or not fully responsible. In the U.S. no one would think of keeping a business associate waiting for an hour, it would be too impolite. A person, who is 5 minutes late, will say a few words of explanation, though perhaps he will not complete the sentence.
+              </div>
+              <span class="fl sc">（5分）</span>
+            </div>
+            <!-- 题目1 -->
+            <div class="compoundDetailtests clearfix">
+              <div class="testTitWrap clearfix mb10">
+                  <span class="test_tittle_quiz">1. 下述有关肝淤血的记述中，哪一项是错误的？<!-- <span class="number"></span> --></span>
+              </div>
+              <dl class="list f13 c_ti">
+                <dd class="cur c_ti f13 clearfix">
+                  <span class="f18 r-box fl "><i class="fl" name="radio_qy">a</i><input type="radio" name="status21"></span>
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">b</i><input type="radio" name="status21"></span>               
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">c</i><input type="radio" name="status21"></span>
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">d</i><input type="radio" name="status21"></span>              
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+              </dl>
+              <div class="msg clearfix quiz_sol">
+                <p class="jeixi">
+                    <span class="person5 color4A4A4A fb f14">答案</span>
+                    <span class="person3 f14 fb ans-right">B</span>
+                </p>
+                <p class="jeixi cleaarfix">
+                  <span class="person5 color4A4A4A f14 fb lh_18">解析</span> 
+                  <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+                </p>                          
+              </div>
+              <div class="knowpoint mt15">
+                  <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                  <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                  <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                  <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+              </div>
+            </div>
+            <!-- 题目2 -->
+            <div class="compoundDetailtests clearfix">
+              <div class="testTitWrap clearfix mb10">
+                  <span class="test_tittle_quiz">1. 下述有关肝淤血的记述中，哪一项是错误的？<!-- <span class="number"></span> --></span>
+              </div>
+              <dl class="list f13 c_ti">
+                <dd class="cur c_ti f13 clearfix">
+                  <span class="f18 r-box fl "><i class="fl" name="radio_qy">a</i><input type="radio" name="status21"></span>
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">b</i><input type="radio" name="status21"></span>               
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">c</i><input type="radio" name="status21"></span>
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+                <dd class="clearfix">
+                  <span class="f18 r-box fl "><i class="fl " name="radio_qy">d</i><input type="radio" name="status21"></span>              
+                  <var class="fl ml10 opt-per">反应开始时，乙中石墨电极上发生氧化反应</var>
+                </dd>
+              </dl>
+              <div class="msg clearfix quiz_sol">
+                <p class="jeixi">
+                    <span class="person5 color4A4A4A fb f14">答案</span>
+                    <span class="person3 f14 fb ans-right">B</span>
+                </p>
+                <p class="jeixi cleaarfix">
+                  <span class="person5 color4A4A4A f14 fb lh_18">解析</span> 
+                  <span class="person65 color656565 f14 lh_18 ">反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应反应开始时，乙中石墨电极上发生氧化反应</span>
+                </p>                          
+              </div>
+              <div class="knowpoint mt15">
+                  <span class="pl15 knowpoint_t ">课程结构:<span class="ml10 knowpoint_cont">两种电荷及电荷之前的互相作用</span></span>
+                  <span class=" knowpoint_t ">难易度:<span class="ml10  knowpoint_cont">较难</span></span>
+                  <span class=" knowpoint_t ">组卷次数:<span class="ml10 knowpoint_t_bg">6</span></span>
+                  <span class=" knowpoint_t createTime">创建时间:<span class="ml10 knowpoint_cont">2015/3/21 21:43</span></span>
+              </div>
+            </div>                
+        </div>
+        <!-- end compoundTest -->
+        <div class="mt20 clearfix">
+          <div class="fl page">             
+            <ul class="clearfix ib pageList">
+                <li class="prev"><a class="dis" href=""><i class="fa fa-angle-left f18"></i></a></li>
+                <li><a class="cur">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href=""><em class="f6">•••</em></a></li>
+                <li><a href="">99</a></li>
+                <li><a href="">100</a></li>
+                <li class="next"><a href=""><i class="fa fa-angle-right f18"></i></a></li>               
+            </ul>                    
+            <div class="clearfix ib">
+                <em class="fl line mr10">|</em>
+                <div class="fl mr5 goto"><span class="fl lh26">跳至</span><input type="text" class="inputText siw26 fl tc ml5 mr5"><span class="fl lh26">页</span></div>
+                <!-- <button class="lineBtnw40 lineMinorButton fl mt3">确定</button> -->
+            </div>
+          </div>
+          <!-- end page -->
+          <div class="fr buttons">
+            <a href="javascript:;" class="animateBtn raised au_set_group clickable pr fl btnw120 majorButton ml10 blackBtn">
+              <input class="toggle" type="checkbox">
+              <div class="anim checked"></div><span >返回</span> 
+            </a>
+            <a href="javascript:;" class="animateBtn raised au_set_group clickable pr fl btnw120 majorButton ml10 sureBtn">
+              <input class="toggle" type="checkbox">
+              <div class="anim checked"></div><span >添加</span> 
+            </a>
+          </div>
+        </div>
+  
+    </div>           
+    <!-- end content-->
+</div>
+<!-- end main -->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/metronic.js"></script>
+<script src="plugins/scrollBar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script> 
+<script src="plugins/uniform/jquery.uniform.min.js"></script>
+<script src="js/multiDropCheck.js"></script><!-- 多选下拉插件 -->
+<!-- 以上js为多级下拉多选所需文件 -->
+<script src="plugins/chosen/chosen.jquery.min.js"></script>
+<script src="js/lhgdialog/lhgdialog.min.js"></script>
+<script src="js/public.js"></script>
+
+<script>
+$(function(){
+	
+	$('body').on('click','.animateBtn',function(event){
+		var ev=event || window.event;
+		ev.preventDefault();
+    	$(this).children('input').trigger('click');
+    	$(this['active']).css('out-line','none');
+    });
+
+    //select 美化
+    if($('.form-control').length >0){
+        $('.select-default').chosen({
+            disable_search:true
+        });
+        $('.select-sea').chosen({
+            disable_search:false
+        });
+    }
+
+    if($('.setPage,.pageSelect').length >0){
+        $('.select-page').chosen({
+            disable_search:true
+        });
+    }  
+
+    //模拟复选框
+    // $.checkbox('.testsMainWrap,.dragBox .testCon');
+
+    //排序
+    $.sortBtn = function(){
+       $('.sortBtn').on('click','a span',function(){
+        var $this = $(this);
+        var isAsc = $this.is('.up');
+        var isDesc = $this.is('.down');
+        if(!isAsc){
+          $this.addClass('up');
+          if(!isDesc){
+            $this.removeClass('up').addClass('down');
+          }else{
+            $this.removeClass('down').addClass('up');
+          };
+        }else{
+          $this.removeClass('up').addClass('down');
+        };
+
+       });
+    };
+    $.sortBtn();
+
+    $.testCtrl = function(){
+      //试题最多显示三行  
+      $('.testClick').each(function(){
+          var conH = $(this).height();
+          var moreHideDot ='<em class="morehidedot">...</em>';
+          if(conH>80){
+              $(this).addClass('defaultH');
+              $(this).append(moreHideDot);
+
+              // 试题点击标题显示答案
+              $(this).on('click',function(){
+                  var isHide = $(this).is('.defaultH');
+                  if(isHide){
+                      $(this).removeClass('defaultH');
+                      $(this).find('.morehidedot').hide();
+                  }else{
+                    $(this).addClass('defaultH');
+                    $(this).find('.morehidedot').show();
+                  }
+                  return false;
+              }); 
+          }
+          
+      });
+       
+       $('body').find('.singleOpt .list dd, .multiOpt .list dd, .compoundTest .list dd ').each(function(){
+          var conH = $(this).find('.opt-per').height();
+          var moreHideDot ='<em class="morehidedot">...</em>';
+          if(conH>60){
+              $(this).find('.opt-per').addClass('defaultH');
+              $(this).find('.opt-per').append(moreHideDot);
+
+              $(this).on('mouseenter',function(){
+                $(".singleOpt .list dd, .multiOpt .list dd, .compoundTest .list dd").removeClass('optviewAll');
+                $(this).addClass('optviewAll');
+                $('.optAll').hide();
+                 var optAllCon=$(this).find('var').html();
+                var _html='<div class="optAll clearfix"><div class="showcon scrolbar scrolbarStyle">'+ optAllCon +'</div></div> ';
+                $(this).append(_html);
+                $('.optAll').find('.morehidedot').remove();  
+
+                 $('.scrolbar').mCustomScrollbar({
+                   scrollInertia:100,
+                   theme:'dark-2'
+                 });
+
+                return false;
+              });
+              $(this).on('mouseleave',function(){
+                $(this).removeClass('optviewAll');
+                $('.optAll').remove();
+                return false;
+              });
+          }
+      });     
+    };
+
+    $.testCtrl();  
+
+
+   
+    
+     // 滚动条
+    $('.dragBox, .optAll').find('.scrolbar').mCustomScrollbar({
+      scrollInertia:200,
+      theme:'dark-2'
+    });
+});
+</script>
+
+<script>
+    jQuery(document).ready(function() {    
+    Metronic.init();
+
+
+var checkdata = [{"parentCode":"0","code":"001","name":"zhan组织","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"bced650c-138b-491b-b24b-8c20980a8f03","deleteFlag":2,"version":1,"checked":false},{"parentCode":"001","code":"001001","name":"zhan组织1","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"cdddb167-7127-4e9b-810b-39649542677d","deleteFlag":2,"version":1,"checked":false},{"parentCode":"001001","code":"001001001","name":"zhan组织11","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"bfb99e45-cc65-4142-af60-cedd65b351dc","deleteFlag":2,"version":1,"checked":false},{"parentCode":"001001001","code":"001001001001","name":"zhan组织111","depth":4,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"c13ad918-a5fd-4d8b-8de4-6e9cf0dfd70b","deleteFlag":2,"version":1,"checked":false},{"parentCode":"001001","code":"001001002","name":"g\u0027f放松防守对方","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"020c3d71-8dac-46ed-a3fa-653468b2ed30","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"002","name":"xwq组织","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"926b86f1-7035-4a17-96fb-96ac4661482f","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002001","name":"xwq机构","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"265be094-d5e1-4025-bf00-70d90652d9b9","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002001","code":"002001001","name":"xwq机构子节点一","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"d1c7398e-7796-4b81-87a4-d6ee1285c788","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002002","name":"xwq2","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":2,"id":"24487bc9-87cf-4959-9986-726b297671fc","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002003","name":"xwq3","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"c01b5a3e-5f23-4062-b7eb-971c68fa0cff","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002004","name":"xwq4","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"70f3d9a4-0403-4bbb-bfb6-f09418e6fafc","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002005","name":"xwq5","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"ad439984-fbb5-4fcc-a5e1-5d2a11bc1268","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002006","name":"xwq6","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"31c34704-fcd6-4ae7-9c4e-321df87a3b30","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002007","name":"xwq7","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"d5f525bb-0113-4af8-9988-ded1c5e5743b","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002008","name":"xwq8","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"d8c185b2-1b9e-4c67-b40c-677c8b69bd45","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002009","name":"xwq9","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"933aab13-10da-4dda-865f-d406dd9d902c","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002010","name":"xwq10","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":2,"id":"b3f6be2b-4079-40b9-bb28-e2e1e6befb3e","deleteFlag":2,"version":1,"checked":false},{"parentCode":"002","code":"002011","name":"xwq11","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"07fb22a6-dc56-4f4e-aadf-75040b4d1972","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"003","name":"zcc机构一二三四五六七八九十一二三四五","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"4af755cc-f1ce-4897-bc7b-13975c5744e2","deleteFlag":2,"version":1,"checked":false},{"parentCode":"003","code":"003002","name":"zcc1","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"c21506ba-c967-41a6-800e-20d2e5b1266c","deleteFlag":2,"version":1,"checked":false},{"parentCode":"003002","code":"003002001","name":"zcc2","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"6fbe672a-5639-4d84-9e69-2f33777708fd","deleteFlag":2,"version":1,"checked":false},{"parentCode":"003002001","code":"003002001001","name":"zcc3","depth":4,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"6337324c-a9e9-4ba9-bb14-ff53667d6d2c","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"004","name":"mr专用机构mr专用机构mr专用机构mr","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"2afa1fe4-c249-495d-9c34-115b8bbb9c65","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004","code":"004001","name":"mr2mr2mr2mr2mr2mr第一第","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"eb0820e4-d823-4b75-bc79-ab98970f0073","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004001","code":"004001001","name":"组织机构第三级组织机构第三级组织机构第三","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"b3d3bddd-0bfa-4720-87e2-56c54e8dc21d","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004001001","code":"004001001001","name":"mr4级mrmr4级mrmr4级mrmr","depth":4,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"4e8f7056-c1b0-4af9-a18f-1f1bf3d98d0f","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004001001001","code":"004001001001001","name":"mr5级mr5级mr5级mr5级mr5级","depth":5,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"5bb2accd-9c5f-47e6-a3d2-67806416a92d","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004001001001","code":"004001001001002","name":"55555555555555555555","depth":5,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"7c490450-8780-4360-bad3-1edbcd9b6e35","deleteFlag":2,"version":1,"checked":false},{"parentCode":"004","code":"004002","name":"第二级机构第二级机构第二级机构第二级机构","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":2,"id":"3691d24d-ad78-43d4-b4f0-ae0a639b8872","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"005","name":"沙场","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":2,"id":"3f765534-a6d5-4426-a0ad-26ed005c4225","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"006","name":"dcc组织机构","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"ebb70562-4bbd-481f-aabe-89f2a4ec2243","deleteFlag":2,"version":1,"checked":false},{"parentCode":"006","code":"006001","name":"dcc二级组织机构","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"9d504afa-f16e-4c3e-8ce2-3c33c7f1cf02","deleteFlag":2,"version":1,"checked":false},{"parentCode":"006001","code":"006001001","name":"dcc三级组织机构名字要足够长才能看折行","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"b85fbc3f-204a-40a9-9802-1c0fb04cad6c","deleteFlag":2,"version":1,"checked":false},{"parentCode":"006001001","code":"006001001001","name":"dcc四级组织机构","depth":4,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"acee0651-ef8a-4546-934e-e9ac72c05bf5","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"008","name":"一级组织机构","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":2,"id":"69c13fd9-1143-4d02-9eea-106264f4d3ae","deleteFlag":2,"version":1,"checked":false},{"parentCode":"0","code":"014","name":"mary组织","depth":1,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"e1a7481d-9b25-49f8-8cbe-f973aca5e76f","deleteFlag":2,"version":1,"checked":false},{"parentCode":"014","code":"014001","name":"mary01","depth":2,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"a732422d-3a3e-442c-86e2-ff5583df73f0","deleteFlag":2,"version":1,"checked":false},{"parentCode":"014001","code":"014001001","name":"mary02","depth":3,"linkman":"","mobile":"","telephone":"","email":"","address":"","zip":"","state":1,"id":"929243f4-0104-4f41-8693-8e9ed28d09ad","deleteFlag":2,"version":1,"checked":false}];
+
+    // 调用多级树
+    $('.dropCheckInit').multiDropCheck({
+        width: 200,
+        key:'code',
+        parentKey:'parentCode',
+        nodeSwitch:false,
+        storage:'storage',
+        data:checkdata
+    });
+	 
+});
+
+</script>
+</body>
+</html>

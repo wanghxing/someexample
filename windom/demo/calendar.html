@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>日历</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/jquery.simple-dtpicker.css" />
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style>
+  .btnBox {padding:20px;}
+</style>
+</head>
+<body style="background:#eee">
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<h2 class="p20 f16 c_333 fb">日历样式 如下：</h2>
+<div class="btnBox" style="margin-left:100px">    
+
+    <p class="fb mb10">1. 只有日期的单日历（时间点）</p>
+    <div class="calendarWrap singleCalen clearfix mb30">
+        <div class="divstart clearfix pr" id="coursesStartdiv">                    
+            <input type="text" class="inputText iw150 date_title fl" placeholder="" sDateName="isDate"  readonly="readonly" id="coursesStart">
+            <i class="pa fa fa-calendar c_999 caIcon" sDateName="isDate"></i>
+        </div>
+    </div>
+    
+    <p class="fb mb10">2. 只有日期的双日历（时间段）</p>
+    <div class="calendarWrap mr10 clearfix mb30">
+        <div class="fl divstart pr" id="coursesStartdiv2">                    
+            <input type="text" class="inputText iw150 date_title fl" placeholder="提交时间" sDateName="isDate2"  readonly="readonly" id="coursesStart2">
+            <i class="pa fa fa-calendar c_999" sDateName="isDate2"></i>
+        </div>
+        <span class="fl ml10 lh30 c_999">-</span>
+        <div class="fl divstart ml10 pr" id="coursesEnddiv2">                    
+            <input type="text" class="inputText iw150 date_title fl" placeholder="提交时间" sDateName="isDate2"   readonly="readonly" id="coursesEnd2">
+            <i class="pa fa fa-calendar c_999" sDateName="isDate2"></i>
+        </div>
+    </div>
+
+    <p class="fb mb10">3. 带时间的日历（时间段精确到秒）</p>
+    <div class="time_box_Date clearfix">
+      <div class="clearfix pr">
+          <div class="fl divstart pr" id="startTimeDiv">
+              <!-- <span class="time-span fl">开始时间</span>                      -->
+              <input type="text" sDateName="isDate"  id="startTime" class="inputText iw200 fl" value="当前时间">
+              <span class="fa fa-calendar pa" sDateName="isDate"></span>
+          </div>
+          <span class="fl timefg">到</span>
+          <div class="fl divend pr" id="endTimeDiv">
+              <!-- <span class="time-span fl">结束时间</span> -->
+              <input type="text" sDateName="isDate"  id="endTime" class="inputText iw200 fl" value="不限时">
+              <span class="fa fa-calendar pa dateCalen" sDateName="isDate"></span>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.simple-dtpicker.js"></script>
+<script>
+  <!-- 日历初始化 -->   
+  $('#coursesStart').appendDtpicker({
+      "closeOnSelected":false,
+      "closeButton": false,
+      "dateOnly":true,
+      "autodateOnStart":false
+  });
+  <!-- 日历调用 --> 
+  $("#coursesStartdiv").click(function(){  
+      $('#coursesStart').handleDtpicker('show');
+  });
+</script>
+
+<script>
+  <!-- 日历初始化 -->   
+  $('#coursesStart2').appendDtpicker({
+      "closeOnSelected":false,
+      "closeButton": false,
+      "dateOnly":true,
+      "autodateOnStart":false
+  });
+  <!-- 日历调用 -->   
+  $("#coursesStartdiv2").click(function(){
+      $('#coursesStart2').handleDtpicker('show');
+  });
+  <!-- 日历初始化 -->   
+  $('#coursesEnd2').appendDtpicker({
+      "closeOnSelected":false,
+      "closeButton": false,
+      "dateOnly":true,
+      "autodateOnStart":false
+  });
+  <!-- 日历调用 -->   
+  $("#coursesEnddiv2").click(function(){
+      $('#coursesEnd2').handleDtpicker('show');
+  });
+</script>
+
+<script>
+$(function(){
+   // 日历插件初始化
+    $('#startTime').appendDtpicker({
+        "closeOnSelected":false,
+        "closeButton": false,
+        "isStopClick":false,
+        "autodateOnStart":false
+    });
+    // $('#startTime').handleDtpicker('show');
+    /*$('#startTimeDiv').click(function(){
+        $('#startTime').handleDtpicker('show');
+    });*/
+    
+    $('#endTime').appendDtpicker({
+        "closeOnSelected":false,
+        "closeButton": false,
+        "isStopClick":false,//冒泡事件是否触发
+        "autodateOnStart":false
+    });
+    // $('#endTime').handleDtpicker('show');
+    /*$('#endTimeDiv').click(function(){
+        $('#endTime').handleDtpicker('show');       
+    });*/
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>多选题-插入测试</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../plugins/scrollBar/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="css/ots_wisdom.css">
+<link rel="stylesheet" type="text/css" href="css/insertTest.css">
+<link rel="stylesheet" type="text/css" href="css/insertTest-wisdom.css">
+<style>
+</style>
+</head>
+
+<body class="popBody">
+<div class="itestBody false">
+    <div class="popContent clearfix p20 pb0">
+      <div class="exercise pop-itestDetail pr scrolbar scrolbarStyle clearfix">
+          <div class="titleArea clearfix">
+              <p>在下列各溶液中，离子一定能大量共存的是（  ）</p>
+          </div>
+          <div class="answerArea">
+              <ul class="bgc">
+                  <li><span class="label-checkbox"><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i checked"> </i></span>A.强碱性溶液中：K＋、Al3＋、Cl－、SO42</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>B.含有0.1 mol·L－1 Fe3＋的溶液中：K＋、Mg2＋、I－、NO</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>C.含有0.1 mol·L－1 Ca2＋的溶液中：Na＋、K＋、CO、Cl－</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>D.室温下，pH＝1的溶液中：Na＋、Fe3＋、NO、SO</li>
+
+                  <li><span class="label-checkbox"><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i></span>A.强碱性溶液中：K＋、Al3＋、Cl－、SO42</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>B.含有0.1 mol·L－1 Fe3＋的溶液中：K＋、Mg2＋、I－、NO</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>C.含有0.1 mol·L－1 Ca2＋的溶液中：Na＋、K＋、CO、Cl－</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>D.室温下，pH＝1的溶液中：Na＋、Fe3＋、NO、SO</li>
+                  <li><span class="label-checkbox"><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i></span>A.强碱性溶液中：K＋、Al3＋、Cl－、SO42</li>
+                  <li><input name="checked01" type="checkbox" class="checkbox"> <i class="checkbox-i j-checkbox-i"> </i>B.含有0.1 mol·L－1 Fe3＋的溶液中：K＋、Mg2＋、I－、NO</li>
+              </ul>
+          </div>
+      </div>
+      <div class="rightAns clearfix none">
+        <p class="fl6 c_333">正确答案：<span class="correctOpt">A、B、C、D、E、F、G、H、I、J</span></p>
+      </div>
+    </div>
+
+    <div class="ui_buttons testSubm">
+      <input type="button" value="跳过本题" class="j-btn-def">
+      <input type="button" value="提交" class="ui_state_highlight j-btn-subm">
+      <input type="button" value="重新答题" class="ui_state_highlight j-btn-cxdt">
+    </div>
+
+    <!-- 回答正确 -->
+    <div class="tanAnswerjudge ofh j-correct">
+      <i class="fl ml16 icon ico-succ f32 mr10 fa fa-check"></i>
+      <p class="fl">
+          <span class="block tl f16 bigtext">回答正确</span>
+      </p>
+    </div>
+    <!-- 回答错误 -->
+    <div class="tanAnswerjudge ofh j-false none">
+      <i class="fl ml16 icon ico-false f32 mr10 fa fa-close"></i>
+      <p class="fl">
+          <span class="block tl f16 bigtext">回答错误</span>
+      </p>
+    </div>
+
+</div>
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/lhgdialog/lhgdialog.min.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../plugins/scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="js/inserttest.js"></script>
+<script>
+    $(function(){
+      var scH = $('.pop-itestDetail').find('ul').height();
+      if(scH > 239) {
+        $('.pop-itestDetail').css('height','239px!important');
+        $('.popBody').find('.scrolbar').perfectScrollbar({
+          wheelSpeed: 200,
+          wheelPropagation: false,
+          scrollbarYActive: true
+        });
+      }
+
+      // 提交结果
+      $('.j-btn-cxdt').hide();
+      $('.testSubm').on('click','.j-btn-subm',function(){
+        $('.j-false').show();
+        $(this).hide();
+        $(this).parent().find('.j-btn-cxdt').show();
+        $(this).parent().find('.j-btn-def').show();
+        $('.rightAns').fadeIn();
+      });
+      $('.testSubm').on('click','.j-btn-cxdt',function(){
+        $('.j-false').hide();
+        $(this).hide();
+        $(this).parent().find('.j-btn-subm').show();
+        $(this).parent().find('.j-btn-def').show();
+        $('.rightAns').fadeOut();
+      })
+
+
+
+    })
+</script>
+</body>
+</html>

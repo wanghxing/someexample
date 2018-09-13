@@ -1,0 +1,224 @@
+﻿@charset "utf-8";
+/*
+ * lhgdialog 默认皮肤
+ * (C) 2009-2011 【一丝冰凉】, http://t.qq.com/yisibl, QQ:50167214
+ * This is licensed under the GNU LGPL, version 2.1 or later.
+ * For details, see: http://creativecommons.org/licenses/LGPL/2.1/
+ */
+/*==================制作新皮肤从这里开始复制==================*/
+/*基本重置*/
+body{ _margin:0; }/*IE6 BUG*/
+.ui_lock_scroll{ *overflow:hidden; }
+.ui_lock_scroll body{ overflow:hidden; }
+
+/*结构层*/
+.ui_content,.ui_title,.ui_buttons input{ font:12px/1.333 tahoma,arial,'\5fae\8f6f\96c5\9ed1',sans-serif; }
+table.ui_border,table.ui_dialog{ width:auto;border-spacing:0;*border-collapse:collapse; }
+.ui_border td,.ui_dialog td{ padding:0; }
+.ui_dialog{ background:#FFF; }
+
+/*标题部分开始*/
+.ui_title{ overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;cursor:move;background:#DDD;-moz-user-select:none;-webkit-user-select:none;padding:0 100px 0 0; }
+.ui_title_buttons{ position:absolute;cursor:pointer;font-size:0;letter-spacing:-.5em; }
+
+/*对齐自适应*/
+.ui_main{ min-width:6em;min-width:0\9;text-align:left; }
+.ui_content{ display:inline-block;*display:inline;zoom:1;text-align:left; }
+.ui_content.ui_state_full{ display:block;width:100%;height:100%;margin:0;padding:0!important; }
+.ui_content.ui_state_full iframe{ /*border-radius:0 0 5px 5px;*/}
+.ui_loading{ width:100%;height:100%; position:absolute; left:0; top:25px; text-align:left;text-indent:-9999em;overflow:hidden;/*background:url(icons/loading.gif) no-repeat center center;*/ }
+.ui_icon_bg{ margin:20px 0 20px 15px; }
+
+/*标题纯CSS按钮开始 min 最小化，max最大化，res还原，rese恢复，close关闭*/
+.ui_min,.ui_max,.ui_close,.ui_res{ position:relative;text-decoration:none;letter-spacing:normal;text-align:center;display:inline-block;*display:inline;zoom:1;vertical-align:top;font-family:tahoma,arial,\5b8b\4f53,sans-serif; }
+.ui_min b,.ui_max b,.ui_res_t,.ui_res_b{ display:block;position:absolute;overflow:hidden;cursor:pointer; }
+.ui_close{ font-weight:500;text-decoration:none;outline:0 none; }
+.ui_close:hover{ text-decoration:none; }
+
+/*Tips部分*/
+.ui_state_tips .ui_main{ min-width:3em; }
+.ui_state_tips .ui_content{ margin-top:-2px;padding:8px 10px!important; }
+.ui_state_tips .ui_icon_bg{ margin:5px 0 6px 9px; }
+.ui_state_tips .ui_title,.ui_state_tips .ui_title_buttons,.ui_res{ display:none; } /* 还原按钮也在这里隐藏，这样可节省代码，注间这段一定要写在上面那段代码的下面*/
+
+#ldg_lockmask{ background:#000;filter:alpha(opacity=60);opacity:.6; }
+/*==================制作新皮肤到这里结束复制==================*/
+
+/*样式层开始*/
+.ui_inner{ /*border:1px solid #999;*/}
+.ui_border{ border-radius:4px; }
+
+.ui_lt,.ui_rt,.ui_lb,.ui_rb{ /*width:6px;height:6px;display:block;*/}
+/*.ui_lt{ border-radius:4px 0 0 0; }.ui_rt{ border-radius:0 4px 0 0; }.ui_rb{ border-radius:0 0 4px 0; }.ui_lb{ border-radius:0 0 0 4px; }*/
+.ui_lt,.ui_rt,.ui_l,.ui_r,.ui_lb,.ui_b,.ui_t,.ui_rb{ /*background:rgba(102,102,102,.3);background:#666\9;filter:alpha(opacity=30);*/}
+
+/*标题栏样式*/
+.ui_title_bar{ position:relative;height:100%;}
+.ui_title{ height:50px;line-height:50px;font-size:18px;color:#999;padding-left:20px;background-color:#eee;*background:#eee; }
+ 
+.ui_state_focus .ui_title{ color:#999; }
+.ui_state_drag .ui_title { /*border-bottom:1px solid #82bee6;text-shadow: 0 -1px 0 #333; background-color:#eee;*/ background:#eee;}
+
+/*标题纯CSS按钮定位部分*/
+.ui_title_buttons{ top:7px;right:13px; }
+.ui_min,.ui_max,.ui_close,.ui_res{ color:#999;font-size:34px;width:30px;height:30px;line-height:30px; }
+.ui_min,.ui_max,.ui_res{ width:0; height:0; overflow:hidden;}
+.ui_min_b{ top:18px;left:5px;width:16px;height:2px;border-bottom:2px solid #999; }
+.ui_max_b{ top:10px;left:5px;width:15px;height:13px; }
+.ui_res_t,.ui_res_b{ top:8px;left:3px;width:10px;height:5px; }
+.ui_res_b{ top:4px;left:6px; }
+.ui_res_t,.ui_res_b,.ui_max_b{ border:1px solid #999;border-top-width:3px; }
+.ui_res_t{ background:#3d8cce; }
+.ui_min:hover b,.ui_max:hover b,.ui_res:hover b{ /*border-color:#555;*/ }
+.ui_close{ vertical-align:baseline;_line-height:22px; }
+.ui_close:hover,.ui_close:focus{ /*color:#c93333;*/ }
+
+/*底部按钮样式*/
+.ui_buttons{ white-space:normal;padding:20px;text-align:right;background-color:#FFF;clear:both; }
+.ui_buttons:after{content:'.';display:block;height:0;clear:both;visibility:hidden;}
+.ui_buttons input::-moz-focus-inner{ border:0;padding:0;margin:0; }
+.ui_buttons input{ height:34px; line-height:31px; font-size:16px; width:100px; border-radius:2px !important; cursor:pointer;display:inline-block;text-align:center; border:1px solid #CCC; color:#666; background:#FFF; margin-left:10px;}
+.ui_buttons input:focus{ outline:0 none;}
+.ui_buttons input:hover{ color:#666; border-color:#ebebeb;}
+.ui_buttons input:active{ color:#666; border-color:#999999;}
+
+.ui_buttons input[disabled]{ cursor:default;border:1px solid #CCC; color:#999; background:#DDD;filter:alpha(opacity=50);opacity:.5;box-shadow:none; }
+
+input.ui_state_highlight{ color:#FFF;border:solid 1px #177bbb;background:#177bbb;}
+input.ui_state_highlight:hover{ color:#FFF; border-color:#58ade1; background:#58ade1; }
+input.ui_state_highlight:active{ color:#FFF; border-color:#0367a7; background:#0367a7; }
+
+/*Tips 部分开始*/
+.ui_state_tips,.ui_state_tips .ui_inner,.ui_state_tips .ui_title_bar{ border:0 none;box-shadow:none; }
+.ui_state_tips .ui_lt,.ui_state_tips .ui_rt,.ui_state_tips .ui_lb,.ui_state_tips .ui_rb{ width:5px;height:5px; }
+
+/*调整删除时的提示信息文字显示位置*/
+.ui_icon,.ui_main{float:left;display:inline;} 
+.ui_icon {width:100px;}
+.ui_icon_bg {margin-bottom:2px; float:right; margin-top:30px;}
+.ui_content{margin-top:32px!important; font-size:16px; color:#333;}
+.ui_state_full { margin-top:0!important; margin-right:0;}
+.ui_buttons {padding-top:20px;}
+
+/*loading*/
+.sk-circle {
+  top:50%;
+  margin-left:auto; margin-right:auto;
+  width: 30px;
+  height: 30px;
+  position: relative; }
+.sk-circle .sk-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+.sk-circle .sk-child:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #179ee0;
+  border-radius: 100%;
+  -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+		  animation: sk-circleBounceDelay 1.2s infinite ease-in-out both; }
+.sk-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+	  -ms-transform: rotate(30deg);
+		  transform: rotate(30deg); }
+.sk-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+	  -ms-transform: rotate(60deg);
+		  transform: rotate(60deg); }
+.sk-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+		  transform: rotate(90deg); }
+.sk-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+	  -ms-transform: rotate(120deg);
+		  transform: rotate(120deg); }
+.sk-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+	  -ms-transform: rotate(150deg);
+		  transform: rotate(150deg); }
+.sk-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+	  -ms-transform: rotate(180deg);
+		  transform: rotate(180deg); }
+.sk-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+	  -ms-transform: rotate(210deg);
+		  transform: rotate(210deg); }
+.sk-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+	  -ms-transform: rotate(240deg);
+		  transform: rotate(240deg); }
+.sk-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+	  -ms-transform: rotate(270deg);
+		  transform: rotate(270deg); }
+.sk-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+	  -ms-transform: rotate(300deg);
+		  transform: rotate(300deg); }
+.sk-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+	  -ms-transform: rotate(330deg);
+		  transform: rotate(330deg); }
+.sk-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+		  animation-delay: -1.1s; }
+.sk-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+		  animation-delay: -1s; }
+.sk-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+		  animation-delay: -0.9s; }
+.sk-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+		  animation-delay: -0.8s; }
+.sk-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+		  animation-delay: -0.7s; }
+.sk-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+		  animation-delay: -0.6s; }
+.sk-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+		  animation-delay: -0.5s; }
+.sk-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+		  animation-delay: -0.4s; }
+.sk-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+		  animation-delay: -0.3s; }
+.sk-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+		  animation-delay: -0.2s; }
+.sk-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+		  animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+
+/*谷歌hack*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.ui_buttons {padding-top:17px;}
+}

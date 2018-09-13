@@ -1,0 +1,12 @@
+js文件说明：
+
+operaGuide.js  ---自定义js （垂直圆圈编号按钮动画等）
+
+jquery.masonry.min.js  ---瀑布流插件
+
+
+echo.js ---图片懒加载 （js中console.log()可能会影响IE浏览器使用此功能）
+
+解决办法：
+如果使用环境包含IE8/9，请养成良好习惯，用if (window.console) { ... }包住console.log()动作，
+切忌把IE8/9想成Chrome/Firefox，以为永远有window.console可用！

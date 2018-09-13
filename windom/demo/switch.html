@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>按钮</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style>
+  .btnBox {padding:20px;}
+</style>
+</head>
+<body style="background:#eee">
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<h2 class="p20 f16 c_333 fb">开关按钮 如下：</h2>
+<div class="clearfix btnBox pr">
+    <!-- <label for="" class="fl mr7 mt5">匿名讨论</label>  -->
+    <div class="fl switch holder" style="top:0;">
+        <input type="checkbox" value="None" id="check_s_0" name="check" class="check-ios checked" />
+        <label for="check_s_0"></label>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/public.js"></script>
+<script>
+$(function(){
+   // 开关
+    $('body').on('click', '.switch input', function(){
+      var isOpen = $(this).is('.checked');
+      //alert(isOpen);
+      if(isOpen){
+        $(this).removeClass('checked');
+        $(this).next('label').removeClass('checked');
+      }else{
+        $(this).addClass('checked');
+        $(this).next('label').addClass('checked');
+      }
+      return false;
+    }); 
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>保存失败提示</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../plugins/chosen/chosen.css" />
+<link rel="stylesheet" href="../plugins/scrollBar/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<button class="animateBtn raised clickable pr btnw100 majorButton ml10 sureBtn succ">
+    <input class="toggle" type="checkbox"/>
+    <div class="anim"></div><span>保存成功提示</span>
+</button>
+
+<button class="animateBtn raised clickable pr btnw100 majorButton ml10 sureBtn failed">
+    <input class="toggle" type="checkbox"/>
+    <div class="anim"></div><span>保存失败提示</span>
+</button>
+
+
+<div class="succtip hand mt50 c_58abe1">第二种提示：成功(请点击看效果)</div>
+
+<div class="failtip hand mt10 " style="color:red;">第二种提示：失败</div>
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../plugins/chosen/chosen.jquery.min.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../plugins/scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/lhgdialog/lhgdialog.min.js"></script>
+<script src="../js/public.js"></script>
+<script>
+$(function(){
+
+    //select 美化
+    if($('.setPage,.pageSelect').length >0){
+        $('.select-page').chosen({
+            disable_search:true
+        });
+    }
+
+    // 保存成功
+    $('.succ').on('click',function(){
+       $.dialog({
+        content: 'url:../pop/saveSuccess.html',
+        title:'',        
+        width:355,
+        height:96,
+        lock:true
+       });
+    });
+
+    // 保存失败
+    $('.failed').on('click',function(){
+       $.dialog({
+        content: 'url:../pop/saveFailed.html',
+        title:'',        
+        width:355,
+        height:96,
+        lock:true
+       });
+    });
+   
+
+   // 第二种提示
+   
+
+    // 操作提示
+    $('body').delegate('.succtip','click',function() { 
+        $.recTips('恭喜！你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系客服',2,'success');
+        //$.recTips('系统错误，请稍后重试',2,'fail');
+    });
+
+    // 操作提示
+    $('body').delegate('.failtip','click',function() { 
+        // $.recTips('恭喜！你所提交的信息已经审核通过，请及时跟进申请状况。如有问题，请联系客服。',2,'success');
+        $.recTips('系统错误，请稍后重试',2,'fail');
+    });
+
+    
+});
+</script>
+
+</body>
+</html>

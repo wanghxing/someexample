@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* 题目框架
+-------------------------------------------------------------- */
+.sortable-item{
+  padding-bottom:20px;
+  margin-bottom:10px;
+  background:#fff;
+  position:relative;
+}
+
+/* 编辑
+-------------------------------------------------------------- */
+.edit-area {
+    position:absolute;
+    float: left;
+    top: 200px;
+    left: 120px;
+}
+.edit-content {
+    position: relative;
+    z-index: 12;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #1E91FF;
+    outline: none;
+}
+
+/* 题目标题
+-------------------------------------------------------------- */
+.sortable-handle{
+    padding: 20px 40px 0 60px;
+  cursor: move;
+  z-index:10;
+}
+.sortable-handle .Q-Edit{
+    padding-right:180px;
+}
+.sortable-item .q-number{
+  float:left;
+  width:42px;
+  /* margin-left:-40px; */
+  padding:5px 0;
+  line-height:30px;
+  font-size:16px;
+  text-align:right;
+}
+.sortable-title{
+  font-size:16px;
+  color:#333;
+  padding:5px 0;
+  line-height:30px;
+  height:auto !important;
+  height:30px;
+  min-height:30px;
+  position:relative;   
+  margin-left:20px;
+  padding-left:10px; 
+}
+
+.sortable-title:hover{
+  background:#f3fafe
+}
+
+/* 题目列表
+-------------------------------------------------------------- */
+.sortable-item  .sortable-main{
+  padding:0 40px;
+}
+.sortable-item .q-list li{
+  margin-top: 5px;
+    padding: 5px 0;
+  overflow:hidden;
+  position:relative;
+}
+.sortable-item .q-list li:hover{
+  background:#f3fafe;
+}
+.sortable-item .q-list{
+  padding-left:20px;
+}
+.sortable-item .q-list li .radio{
+  margin:4px 8px 0 0;
+}
+.sortable-item .q-list li  .checkbox-i{
+  float:left;
+  margin:4px 0 0 0;
+  padding-right:0.65em;
+}
+.sortable-item .q-list li label{
+  float:left;
+  cursor:pointer;
+  font-size:14px;
+  width:700px;
+}
+.ui-sortable-placeholder {
+   
+    height: 6px !important;
+  padding:0;  
+    background-color: #58abe1;
+    visibility: visible !important;
+}
+
+/* 题目排序
+-------------------------------------------------------------- */
+.sortable-item  .Q-Tool{
+  position:absolute;
+  right:50px;
+  top:28px;
+  z-index:11;
+  display:none;
+}
+
+.sortable-item  .Q-ToolMin{
+  position:absolute;
+  right:10px;
+  top:5px;
+  z-index:11;
+  display:none;
+}
+
+.ques_que .ques_icons a:hover {background:#3D9BFD;}
+.sortable-item .Q-ToolMin a:hover{
+    border:1px solid #3D9BFD;
+  background:#fff; 
+  width:22px; 
+  height:22px; 
+  line-height:22px;
+  color:#3D9BFD;
+}
+.dy-sortable{
+  list-style: outside none none;
+    margin: 0;
+    min-height: 30px;
+    padding: 0;
+    position: relative;
+}
+.que-mark{float:left;margin-left:-50px}
+.que-must,.que-must-no{float:left;height:30px;line-height:30px;font-size:14px;padding:4px 0;margin-right:10px;color:#FF5753;cursor:pointer;}
+.que-must-no{color:#a7a7a7}
+
+.queseditFocus {border:1px solid #1E91FF;background-color:#ffffff;}
+.bg_f3fafe {background:#f3fafe;}
+
+
+

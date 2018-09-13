@@ -1,0 +1,111 @@
+@charset 'utf-8';
+
+/* 视频插入测试 LMS蓝 */
+
+/* 按钮 */
+.lineBtnw120 {
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.closeAddtest {
+    width: 111px;
+    border-width: 2px;
+    padding-left: 0;
+    text-align:center;
+}
+
+.linegrayBtn {border-color:#ececec!important;color:#313339!important;}
+.linegrayBtn:hover, .linegrayBtn:active {border-color:#ececec!important;color:#313339!important;}
+.grayBtn {background:#dcdada!important;color:#666666!important;}
+.grayBtn:hover, .grayBtn:active {background:#dcdada!important;color:#999999!important;}
+
+.linegraBtn, .linegraBtn:hover, .linegraBtn:active, .readedSetBtn .lineBtn {
+    border-color: #3a98f0!important;
+    color: #3a98f0!important;
+}
+.linegraBtn:hover, .linegraBtn:active {
+	border-color: #3a98f0!important;
+    color: #3a98f0!important;
+}
+
+/* 新增测试 */
+.newTestBox {
+  background:#313339;
+}
+/* 题型 */
+.testType .testtypeTab li:hover .bomline, 
+.testType .testtypeTab li.cur .bomline {
+  background:#3a98f0;
+}
+/* ------------------------------listTest------------------------------ */
+
+.ui-sortable-placeholder {
+  background-color: #3a98f0;
+}
+.listTest .test-smtool .test-smicons a {color:#3a98f0;}
+.listTest .test-smtool .test-smicons a:hover {background:transparent;color:#3a98f0;}
+
+/* -----------------------------end listTest----------------------------- */
+
+.setvideoTime input {color:#3a98f0;}
+
+/* 测试轴 */
+.bomtestdots dd .pic {width:31px;height:38px;background:url(../images/testdot-pic.png) no-repeat 0 0;}
+.bomtestdots dd.active .pic {background-position:-93px 0;}
+
+/*底部按钮样式*/
+.itestBody input.ui_state_highlight,
+.itestBody input.ui_state_highlight:hover,
+.itestBody input.ui_state_highlight:active { 
+  color:#ffffff;
+  border:solid 1px #3a98f0;
+  background:#3a98f0;
+}
+
+.itestBody input.ui_state_highlight:hover,
+.itestBody input.ui_state_highlight:active {
+  color:#ffffff;
+  border:solid 1px #3a98f0;
+  background:#3a98f0;
+}
+
+
+.itestBody .rightAns .correctOpt {color:#3a98f0;}
+
+/* 回答正确错误 */
+.tanAnswerjudge .ico-succ {
+  color: #3a98f0;
+}
+
+/* --------------------------------------------------wisdom 样式-------------------------------------------------- */
+
+.listTest .test-main {
+  background: #ffffff;
+}
+
+.t-area {
+  padding: 8px;
+}
+
+.recTipBox{min-width:300px; _width:300px; height:40px;line-height:40px;background:#666; position:fixed; _position:absolute;left:50%;top:50%;margin-left:-150px;margin-top:-70px;text-align:center;color:#fff;font-size:16px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; opacity:0.8; filter:alpha(opacity=80); padding:0 20px; z-index:9999;}
+.tspic {
+  position:relative;
+}
+.tspic .fa {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    font-size: 22px;
+}
+
+.itestTipBox {height:100px;line-height:100px;}
+.itestTipBox .tspic {padding-left:30px;}
+.listTest .t-list li  .checkbox-i {margin-right:1.3em;margin-top:6px;}
+.listTest .t-list li .radio {margin-right: 9px;}
+.testypeCon .mCSB_inside > .mCSB_container {margin-right:0px;}
+
+.addOptBtn i {position:relative;top:1px;}
+
+.itestBody .ui_buttons input {border-radius:30px!important;}

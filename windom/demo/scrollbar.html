@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>滚动条</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../plugins/scrollBar/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" type="text/css" href="../css/reset_base.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style>
+  .scrollBox, .scrollBox2 {padding:20px;}
+  .scrollBox2 {height:100px;}
+</style>
+</head>
+<body style="background:#eee">
+<!-- <div id="navhtml"></div> -->
+<!-- end header -->
+<h2 class="p20 f16 c_333 fb">滚动条样式如下：</h2>
+<h4 class="pl20 f14 c_333">1. 垂直方向滚动条 (样式 ：<span class="c_666 fb">scrolbarStyle</span>)</h4>
+<div class="scrollBox">
+  <div class="scrolbar scrolbarStyle" style="height:100px;">
+    测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落
+  </div>
+</div>
+<div class="mt30"></div>
+<h4 class="pl20 f14 c_333">2. 水平方向滚动条 (样式 ：<span class="c_666 fb">scrolbarStyleX</span>)</h4>
+<div class="scrollBox2 clearfix" style="width:50%">
+  <div class="scrolbar scrolbarStyleX" style="width:100%;">
+    <p class="" style="width:1300px;">
+      测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落测试段落
+    </p>
+  </div>
+</div>
+
+
+
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script src="../plugins/scrollBar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/public.js"></script>
+<script>
+$(function(){
+  // 滚动条
+  $('.scrollBox').find('.scrolbar').mCustomScrollbar({
+    scrollInertia:200,
+    theme:'dark-2'
+  });
+
+  $('.scrollBox2').find('.scrolbar').mCustomScrollbar({
+    scrollInertia:200,
+    theme:'dark-2',
+    horizontalScroll:true,
+    axis:"x"
+  });
+});
+</script>
+
+</body>
+</html>

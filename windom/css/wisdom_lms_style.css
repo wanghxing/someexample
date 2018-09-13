@@ -1,0 +1,275 @@
+@charset 'utf-8';
+
+/*
+#208AF8
+#2D93FF
+#0069D4
+#F5FCFF
+
+ */
+
+/*智云样式*/
+body {background: #F4F9FB;}
+
+.bg_177bbb {background:#208AF8;}
+
+.c_177bbb {color:#208AF8;}
+.c_58abe1 {color:#2D93FF;}
+.c_0367a7 {color:#0069D4;}
+
+.StudyBody .c_177bbb {color:#208AF8;}
+.StudyBody .c_58abe1 {color:#3a98f0;}
+
+/*按钮*/
+.majorButton {/*background:#208AF8;*/background:#3a98f0; color:#FFF;}
+.majorButton:hover {background:#2D93FF;}
+.majorButton:active {/*background:#0069D4;*/background:#2D93FF;}
+.minorButton {background:#ff8000; color:#FFF;}
+.minorButton:hover {background:#fc9228;}
+.minorButton:active {background:#ec5a02;}
+.lineMajorButton { background:#FFF; border:1px #3a98f0 solid; color:#3a98f0;}
+.lineMajorButton:hover {border:1px #2D93FF solid;}
+.lineMajorButton:active {border:1px #2D93FF solid;}
+.lineMinorButton { background:#FFF; border:1px #cccccc solid; color:#666666;}
+.lineMinorButton:hover {border:1px #ebebeb solid;}
+.lineMinorButton:active {border:1px #999999 solid;}
+
+input.ui_state_highlight {color:#fff;border-color:#3a98f0;background-color:#3a98f0;}
+
+/*select*/
+.chosen-container-active.chosen-with-drop .chosen-single {border-color:#1e91ff;}
+.chosen-container-single .chosen-drop {background: #FFFFFF;border: 1px solid #D3DCE6;box-shadow: 0 6px 10px 0 rgba(161,185,180,0.27);border-radius: 4px!important;margin-top:5px;overflow:hidden;}
+.chosen-container .chosen-results li {font-size: 12px;color: #666666;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: inline-block;max-width:100%;padding:7px 6px;}
+.chosen-container .chosen-results li.highlighted {background: #e5f5ff;font-size:13px;color: #0B8BFF;}
+
+/*表单*/
+.inputText, .multiRowText {border-color:#e9e9e9;/*border-radius:4px;*/}
+.inputFocus {border-color:#1e91ff;}
+/*select树*/
+.elfTree-open .showInitial {border-color:#1e91ff;}
+.elfTree li:hover {background-color:#e5f5ff;color: #0B8BFF;}
+.elfTree .parent_col {background-color:#e5f5ff;color: #0B8BFF;}
+
+/*page*/
+
+/*table*/
+.table {border-color:#E4E8EB;border-left:1px solid #E4E8EB;}
+.table th,.table td { border-color:#E4E8EB;text-align:left;/*padding-left:20px!important;*/ font-size:13px;border-left:0;}
+.table td.numeric {font-size:13px;}
+.table th {padding:9px 0; background:#ffffff; color:#6F6F6F;padding-left:15px;}
+.table td {padding:12px 0; background:#ffffff;color:#1F2D3D;}
+.table tr:hover td {background:#F5FCFF;color:#0276D5;}
+.table td a { color:#208AF8;}
+.table td a:hover {text-decoration:underline;}
+.table td em {padding:0 5px; color:#999999; font-size:12px;}
+.smallTable th,.smallTable td{padding:4px 0; line-height:1.5;}
+.table th:first-child,.table td:first-child, .table th.first-th,.table td.first {padding-left:20px;}
+.table th:last-child,.table td:last-child, .table th.opera-th,.table td.opera {text-align:left;padding-right:20px;}
+
+
+/*弹窗样式重定义*/
+.ui_buttons input, .ui_buttons input:focus, .ui_buttons input:hover, .ui_buttons input:active {background: #fff!important;border-color:#fff!important;border-radius: 31px!important;width:80px!important;height:31px!important;line-height:29px!important;font-size:14px!important;color: #475669!important;}
+.ui_buttons input:hover {/*background:#ccc;*/border-color:#e9e9e9!important;}
+input.ui_state_highlight, input.ui_state_highlight:focus, input.ui_state_highlight:hover, input.ui_state_highlight:active {background: #007CDC!important;border-color:#007CDC!important;color:#fff!important;float:right;}
+input.ui_state_highlight:hover, input.ui_state_highlight:active {background:#016CC3!important;border-color:#016CC3!important;}
+
+
+.ui_title {background:#fff!important;font-size: 16px!important;color: #1F2D3D!important;font-weight:bold!important;}
+.ui_state_focus .ui_title {color: #1F2D3D!important;}
+.ui_close {color:#C0CCDA!important;font-weight:normal!important;transition: all 250ms ease-out;font-size:28px!important;}
+
+.popBody label.labl {font-size:14px;color: #475669;line-height:19px;margin-bottom:12px;}
+.popBody .inputText {border-radius:4px;font-size:14px;color: #99A9BF;}
+
+.ui_close {color: #C0CCDA!important; font-weight: normal!important; transition: all 250ms ease-out; font-size: 28px!important;} 
+.ui_close:hover {transform:rotate(90deg);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);}
+
+/*头部*/
+.headTop {background:#2C93FF;}
+.click_bg_col {background-color:#026EDE;}
+.click_bg_col2 {background-color:#1798F2;}
+.hover_bgcol {background-color:#026EDE;}
+
+.headTop .navUl a:hover, .navUl .cur a {background-color: #0E76EF;}
+.headTop .bg_006CC3 {background-color: #0E76EF;}
+.userLetter_con, .userN_con {background-color:#2C93FF;}
+.userN_con ul li:hover, .userLetter_con li:hover, .teacher_con li:hover {background-color:#2C93FF;}
+.click_bg_col, .navUl .navMore.hover {background-color: #0E76EF;}
+.elliMore, .elliMore li a {background-color:#026EDE;}
+.elliMore li a:hover, .headTop .navUl .elliMore li a:hover  {background-color: #2C93FF;}
+
+/*日历样式重置*/
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.active {background-color:#026EDE;}
+.datepicker > .datepicker_inner_container > .datepicker_calendar > .datepicker_table > tbody > tr > td.hover {background-color:#026EDE;}
+
+/*在线备课*/
+.subnav .cur {
+    border-bottom-color: #208AF8;
+    color: #208AF8;
+}
+.subnav .cur a {color:#208AF8;}
+
+.iconBlue {color:#2D93FF;}
+.iconBlue:hover {color:#208AF8;}
+
+.kcyl, .shzt {color:#2D93FF;}
+.courseList .setup {color:#2D93FF;}
+.courseActivity_ctrl a, .courseActivity_ctrl a i {color:#2D93FF;}
+.whiteMoveDel i {color:#2D93FF;}
+.whiteMoveDel:hover {border-color:#2D93FF;}
+
+.courseAdd {/*border-radius:50px;*/}
+.courseActivity, .unitAdd {border-color:#fff;background:#fff;box-shadow: 1px 1px 6px 0 #E4EEEC;-webkit-box-shadow: 1px 1px 6px 0 #E4EEEC;}
+
+.oneLevel, .courseLevel {background-color:#2D93FF;border-color:#2D93FF;box-shadow: 1px 2px 6px 0 rgba(45,147,255,0.37);-webkit-box-shadow: 1px 2px 6px 0 rgba(45,147,255,0.37);}
+.twoLevel, .threeLevel {background-color: #E6F3FC; border-color:#D4F0FC;}
+.twoLevelLeft {color:#2D93FF;}
+
+.blueTrans {background-color:#2D93FF;}
+
+.levelState {border-color:#ffe8bb;background:#fff6e6;border-radius:4px;color:#666;}
+
+.floatAdd {background-color:#F6FBFF;border-color:#d8e8ff;color:#0B8BFF;}
+/*.btnAddSpeaker, .btnSelectLib {background-color:#F6FBFF;border-color:#d8e8ff;color:#0B8BFF;}*/
+
+.rowOperation a, .rowOperation a i {color:#2D93FF;}
+/*不对*/
+.blueMoveDel:hover {background-color:#208AF8;} 
+
+.unitLevelList .levelMoreBtn:hover, .twoLevel .levelMoreBtn:hover, .threeLevel .levelMoreBtn:hover, .twoLevelBtn:hover i, .twoLevelBtn:hover span, .plusBtn:hover i, .plusBtn:hover span, .addActivity .pic a:hover i {color:#208AF8;}
+
+/*模拟复选框*/
+.checkbox-i {
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/wisdom/checkbox-bg.png) no-repeat -70px 0px ;
+    margin-right: 0.65em;
+    padding-right:0;
+}
+.checkbox-i.hover, .checkbox-i.focus {background-position:-56px 0;}
+.checked {
+    background-position: 0 0px;
+}
+.disabled-checked {
+  background-position: -70px 0px;
+}
+.disabled  {
+  background-position: -28px 0px;
+}
+
+
+.course_design_con:hover {border-color:#1690FF;}
+
+
+/*资源管理*/
+.Compinit h2, .Resinit h2 {color:#4a4a4a;}
+.mtit strong {color:#4a4a4a;}
+
+.termBox li.cur, .termBox .rollbox li:hover {color:#208AF8;}
+.termBox li.cur i {background-color:#208AF8;}
+.maMoreBox span:hover {color:#208AF8;}
+.maMoreBox dd:hover {color:#208AF8;}
+
+.res_opts li {color:#4a4a4a;}
+.res_opts li.checked {background-color:#2D93FF;border-color:#2D93FF;}
+
+.progress_cur_bar {background-color:#2D93FF;}
+
+.trLCon_stru .trTwoCon.cur, .trLCon_stru .trTwoCon.cur:hover, .mrCon.cur, .mrCon.cur:hover {background-color:#208AF8;}
+.trLCon_stru .trOneCon:hover, .trLCon_stru .trTwoCon:hover, .mrCon:hover {background-color:#F5FCFF;}
+
+.typeIcon i {color:#208AF8;}
+.mnav .cur span {border-bottom-color:#208AF8;}
+.dl_titNav li.cur {color:#208AF8;}
+
+.rightGN .collect, .resIcons .collect, .rightGN .collect i, .resIcons .collect i, #collect .collect i {color:#208AF8;}
+.rightGN span a:hover, .rightGN span a:hover .fa, .rightGN span .collect .fa, #collect .collect {color:#208AF8;}
+
+.resIcons a:hover, .resIcons a:hover i {color:#208AF8;}
+
+.RightTool a.Cur i.fa, .RightTool a:hover i.fa, .RightTool .sbarItem.Cur i, .RightTool .sbarItem:hover i {color:#2D93FF;}
+
+.catWrap .studyTab li.hover {border-bottom-color:#0277d7;color:#0277d7;}
+.documOrder .listOrd li em.Col {background-color:#2D93FF;}
+.documOrder .listOrd li:hover, .otherShare .listSha li:hover, .otherCatalog .listCata .nocataList li:hover {background-color:#F5FCFF;}
+.otherShare .listSha li span.bs i {color:#2D93FF;}
+
+.seniorSearch .search_btn, .seniorBtn  {color:#208AF8;}
+
+body.StudyBody {background-color:#363636;}
+.StudyBody .maCenter .H1Title {color:#cccccc;}
+.StudyVideo h2 span.title, .LQuest h2 span.title {font-size:20px;color:#208AF8;}
+
+/*table对齐*/
+.trRCon_con .table td .pl40, .trRCon .table td a {padding-left:15px;}
+.QuesMana .table td.operat span.pl15 a {padding-left:0;}
+
+.reply_con:hover .replyIcons .fr i.fa{color:#3a98f0;}
+.agreeSub i {color:#3a98f0;}
+.circleScore {background:#3a98f0;}
+.viewWork:hover i { color:#3a98f0;}
+.ordinalNumber {background:#3a98f0;}
+
+.btnLookMore {color:#208AF8;}
+
+.RightTool a.Cur i.fa,.RightTool a:hover i.fa,.RightTool a.Cur i,.RightTool a:hover i,.RightTool .sbarItem.Cur i,.RightTool .sbarItem:hover i{color:#3a98f0;}
+
+.catWrap .studyTabCon .TabCon dl dd .Con i.fa:hover{color:#3a98f0;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr span:hover i.fa{color:#3a98f0;}
+.catWrap .studyTabCon .TabCon dl dt .time i.fa:hover{color:#3a98f0;}
+.blueCur i {color:#3a98f0;}
+
+.upImg a:hover, .upfile a:hover, .edit a:hover, .heart a:hover, .del a:hover {color:#3a98f0;}
+
+/*课程预览*/
+.termTool li:last-child a {border-right:0;}
+.termTool li:hover a, .termTool li.cur a {color:#0277d7;}
+.termTool li.cur i {background:#0277d7;}
+
+.termBox li:hover i {background:#208AF8;}
+
+.paragraph {padding-bottom:20px;margin-bottom:20px;overflow: hidden;word-break: break-all;}
+
+.ques_opts li .ques_icons a, .ques_que .ques_icons a {color:#2D93FF;}ww
+
+/*学生学习笔记*/
+.catWrap .studyTabCon .TabCon dl dd .other .notes .heart i.fa,.CommentWrap .TabCon dl dd .other .fr .heart i.fa {color:#208AF8;}
+/*推荐*/
+.catWrap .studyTabCon .TabCon dl dd .other .notes .rec i.fa {color:#208AF8;}
+.catWrap .studyTabCon .TabCon dl dd,.CommentWrap .TabCon dl dd {position:relative;}
+.catWrap .studyTabCon .inputPL .notShare,.CommentWrap .TabCon dl dd .shareCon {line-height:30px;}
+.catWrap .studyTabCon .shareCon,.CommentWrap .TabCon dl dd .shareCon {left:0;top:3px;color:#208AF8;}
+.CommentWrap .TabCon dl dd .shareCon {top:0;}
+.catWrap .studyTabCon .TabCon dl dd .Con,.CommentWrap .ntcon {position:relative;overflow:hidden;}
+.studyTabCon .Con .moreBtn, .CommentWrap .ntcon .moreBtn {position:absolute;right:0;bottom:0;background:#fff;text-indent:0;}
+.studyTabCon .Con .moredf {position:static;float:right;}
+.studyTabCon .Con .moreBtn i {text-indent:0;margin-right:0!important;}
+
+
+.textindentX {text-indent:1.5em;}
+
+.tsBox {width:265px;}
+
+/*辅导教师 笔记*/
+.CommentWrap .TabCon dl dd .other .fr .recommend i.fa {color:#208AF8;}
+.CommentWrap .TabCon dl dd .other .fr .rec i.fa {color:#999;}
+/*学生 笔记*/
+.Editbtn span{margin-left: 35px;position: relative;}
+.Editbtn span i {left:-35px;top:3px;}
+
+
+/*课程学习_问答*/
+.words_limit_low{right:10px;bottom:5px;}
+.tea_qa{width:778px;height:116px;}
+.CommentWrap .TabCon dl.p0{padding:0;border-bottom:0;}
+.CommentWrap .TabCon dl.p0:hover{background:transparent;}
+.CommentWrap .TabCon dl.dl .fr span:hover .fa{color:#58abe1;}
+.answer_fifty{padding:20px 10px 5px;border-bottom:1px solid #e5e5e5;font-size:14px;font-weight:bold;}
+.answer_pics{margin:10px 0;}
+.answer_pics li{width:108px;height:63px;margin-right:10px;position:relative;}
+.answer_pics li .fdj{left:42px;top:20px;z-index:2;}
+
+/* 学生平台 */
+.studyTip a {line-height:30px;}
+.text_HL, .btn_noBg, .seeResult {color:#3a98f0;}

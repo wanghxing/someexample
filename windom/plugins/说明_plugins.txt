@@ -1,0 +1,15 @@
+calendar： 日历插件 单日历选择插件
+
+chosen（jquery-chosen）： select下拉选美化插件
+
+font-awesome： 奥森字体库
+
+My97DatePicker ：日历插件
+
+pickerDateRange ：日历时间段插件（如：历史课堂）
+
+scrollBar：滚动条插件
+
+video：视频插件
+
+jquery-migrate.min.js：

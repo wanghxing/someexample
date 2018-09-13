@@ -1,0 +1,281 @@
+@charset 'utf-8';
+
+/* 
+此文件为 资源管理 部分自适应页面样式
+
+ */
+
+/*课程学习宽度自适应页面css*/
+
+/* 课程学习 */
+body.StudyBody{background:#3d3e45;padding:50px 0px;min-width:1010px !important;height: auto;}
+
+/* 可视区域>1920 */
+.StudyBody .maCenter{width:1500px;margin:0px auto;}
+.StudyBody .maCenter .H1Title{font-size:26px;font-weight:bold;color:#ffffff;line-height:45px;padding:0px 25px 5px 25px;}
+.StudyBody .maCenter .H1Title i{font-size:20px;color:#6e6d6f;}
+.StudyBody .maCenter .H1Title .vback { line-height:normal; margin-top:12px;}
+
+/* 内容层投影 */
+.s_Box,.s_BoxCom{background:#ffffff;filter:progid:DXImageTransform.Microsoft.Shadow(color=#333333,direction=120,strength=3);/*ie*/-moz-box-shadow:10px 10px 40px #333333;-webkit-box-shadow:10px 10px 40px #333333;box-shadow:10px 10px 40px #333333;}
+.s_Box .typeBlock,.s_BoxCom .typeBlock {position:absolute;left:-50px;top:10px;background:#097bc2;color:#ffffff;width:50px;height:45px;-moz-border-radius:4px 0px 0px 4px;-webkit-border-radius:4px 0px 0px 4px;border-radius:4px 0px 0px 4px;}
+.s_Box .typeBlock i,.s_BoxCom .typeBlock i{font-size:24px;width:50px;height:45px;text-align:center;vertical-align:middle;line-height:45px;}
+
+/* 右侧功能区 */
+.RightTool{position:fixed;left:50%; top:100px; margin-left:765px;width:40px; z-index:200;}
+.RightTool .SectionIcon{width:38px;height:50px;color:#666; line-height:50px; margin-bottom:10px; text-align:center; font-size:18px; border:1px solid #666;float:left; -moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.RightTool .Prev,.RightTool .Share{width:38px;height:39px;line-height:39px;color:#666; text-align:center; font-size:18px; border:1px solid #666;border-bottom:0px; float:left; -moz-border-radius:2px 2px 0px 0px;-webkit-border-radius:2px 2px 0px 0px;border-radius:2px 2px 0px 0px;}
+.RightTool .Next,.RightTool .Order{width:38px;height:38px;line-height:38px;color:#666; text-align:center; font-size:18px; border:1px solid #666;float:left; -moz-border-radius:0px 0px 2px 2px;-webkit-border-radius:0px 0px 2px 2px;border-radius:0px 0px 2px 2px;}
+.RightTool .Top,.RightTool .Fullscreen{width:38px;height:40px;line-height:40px;color:#666; text-align:center; font-size:18px;margin-top:10px; border:1px solid #666;float:left; -moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;border-radius:2px 2px 2px 2px;}
+
+.ToolMore{margin-top:0px;top:100px;}
+.ToolMore .user{width:38px;height:48px;color:#666; line-height:48px; margin-bottom:10px; text-align:center; font-size:18px; border:1px solid #666;float:left; -moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px; cursor:pointer;}
+.ToolMore .SectionIcon{width:38px;height:49px;color:#666; line-height:49px; margin-bottom:0px; text-align:center; font-size:18px; border:1px solid #666;border-bottom:0px;float:left; -moz-border-radius:2px 2px 0px 0px;-webkit-border-radius:2px 2px 0px 0px;border-radius:2px 2px 0px 0px;}
+.ToolMore .comment{width:38px;height:49px;color:#666; line-height:49px; margin-bottom:0px; text-align:center; font-size:18px; border:1px solid #666;border-bottom:0px;float:left; -moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
+.ToolMore .comment em{font-size:12px;position:relative;width:38px; text-align:center;line-height:16px;top:-8px;display:block;}
+.ToolMore .pencil{width:38px;height:49px;color:#666; line-height:49px; margin-bottom:0px; text-align:center; font-size:18px; border:1px solid #666;border-bottom:0px;float:left; -moz-border-radius:0px;-webkit-border-radius:0px;border-radius:0px;}
+.ToolMore .question{width:38px;height:48px;line-height:48px;color:#666; text-align:center; font-size:18px; border:1px solid #666;float:left; -moz-border-radius:0px 0px 2px 2px;-webkit-border-radius:0px 0px 2px 2px;border-radius:0px 0px 2px 2px;}
+.RightTool .hasbm {border-bottom:1px #666 solid; border-radius:0px 0px 2px 2px;}
+.RightTool .hasone {border-bottom:1px #666 solid; border-radius:2px;}
+.RightTool .btnone {border-top:0;}
+.RightTool a.Cur i.fa,.RightTool a:hover i.fa,.RightTool a.Cur i,.RightTool a:hover i,.RightTool .sbarItem.Cur i,.RightTool .sbarItem:hover i{color:#3a98f0;}
+.sbarItem {cursor:pointer; position:relative;}
+.RightTool .user {position:relative;}
+/*问答功能按钮*/
+.ToolMore .question i.cedu-QnA{font-size:20px !important;line-height:48px !important;}
+
+/*右侧漂浮*/
+.RightTool .Top{display:none;cursor:pointer;}
+.bottomTool {bottom:0; right:0; position:absolute;} 
+.bmToolRelative {position:relative; float:left; padding-top:40px;}
+
+
+/* 1920>可视区域>1660 */
+@media (min-width:1601px) and (max-width:1920px){
+.StudyBody .maCenter{width:1280px;}
+.RightTool{margin-left:655px;}
+
+} 
+
+/* 1600>可视区域>1330 */
+@media (min-width:1330px) and (max-width:1600px){
+.StudyBody .maCenter{width:1180px;}
+.RightTool{margin-left:605px;}
+
+}
+
+/* 1330>可视区域>1180 */
+@media (min-width:1180px) and (max-width:1329px){
+.StudyBody .maCenter{width:1080px;}
+.RightTool{margin-left:555px;}
+
+}
+
+/* 1180>可视区域 */
+@media (max-width:1179px){
+.StudyBody .maCenter{width:900px;}
+.RightTool{margin-left:465px;}
+.ots .maCenter{width:1000px;}
+.ots .RightTool{margin-left:0; left:auto; right:10px;}
+}
+
+.StudyVideo h2 span.title, .LQuest h2 span.title {
+    font-size:20px;
+    color: #0375E9;
+}
+.StudyVideo h2, .LQuest h2 {
+    line-height: 45px;
+}
+.typeIcon {
+    margin: 14px 10px 0 0;
+}
+.StudyVideo h2 span.fr, .LQuest h2 span.fr {
+    position: relative;
+    top: 3px;
+}
+.resIcons span {
+    color: #666;
+}
+.StudyVideo h2 span.fr i, .LQuest h2 span.fr i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+.contentBox {
+    background: #ebebeb;
+}
+.cS_init {
+    padding: 125px 0;
+}
+.cS_init .pic i, .sideBar_init .pic i, .noS_con .pic i, .init_con .pic i {
+    font-size: 90px;
+    color: #ebebeb;
+}
+.rCF_init {
+    padding: 300px 0 100px;
+}
+.rCF_init .pic i {
+    color: #fff;
+}
+.ccma {
+    width: 100%;
+}
+
+/*右侧功能菜单图标大小*/
+.RightTool .fa{font-size:18px;font-weight:lighter;}
+/*学习路径*/
+.sP_tit_list,.sP_chapter_list{cursor:pointer;}
+.sP_part_list{height:40px;line-height:40px; border-bottom:1px #ebebeb solid;}
+.sP_tit_list{height:40px;line-height:40px; border-bottom:1px #ebebeb solid;}
+.sP_chapter_list{height:39px;line-height:39px; background:#F8F8F8; border-bottom:#EBEBEB;border-bottom:1px #ebebeb solid;}
+.sP_part_list:hover span,.sP_chapter_list:hover span,.sP_tit_list:hover span{color:#0367a7;}
+
+.QA_write{height:118px;}
+.btn_sm_blue{height:20px;line-height:20px;}
+.StudyVideo{padding:10px 25px 25px 25px;}
+
+.videobox{background:#000000;}
+.catalog{width:415px;position:absolute;right:0px;top:0px;z-index:100; display:none;box-shadow:-5px 0 20px rgba(0,0,0,0.4);}
+.catalogVideo{box-shadow:-5px 0 20px #333333,0 0 0 #333333,0 0 0 #333333,0 0 0 #333333;}
+.catWrap{width:100%;height:100%;background:#ffffff;}
+.w215{width:215px;}
+
+.catWrap .studyTab{height:40px;border-bottom:2px solid #e7e7e6;padding-top:10px;}
+.catWrap .studyTab li{width:73px;float:left;margin:0px 15px;color:#999999;cursor:pointer;line-height:40px;font-size:16px;font-weight:bold;text-align:center;}
+.catWrap .studyTab li.hover{border-bottom:3px solid #0277d7;color:#0277d7;margin-top:-1px;}
+.catWrap .studyTabCon{display:none;}
+.catWrap .studyTabCon{padding:0px;position:relative;overflow:hidden;}
+.catWrap .studyTabCon .listCtr{overflow:hidden;}
+.catWrap .threeCenter li {width:107px;}
+
+a.fa:hover{color:#177bbb;}
+.del a{color:#999;}
+.heart a i.fa-heart{/*font-size:13px;*/}
+.upImg a:hover,.upfile a:hover,.edit a:hover,.heart a:hover,.del a:hover{color:#58abe1;}
+.upImg:hover a,.upfile:hover a {color:#58abe1;}
+
+
+.catWrap .studyTabCon .listCtr i{position:relative;top:2px;font-size:16px;}
+.catWrap .studyTabCon .listCtr .cs_part_list,.catWrap .studyTabCon .listCtr .cs_Ptit_list{height:45px;line-height:45px;}
+.catWrap .studyTabCon .listCtr .cs_part_list{padding-top:0px;padding-bottom:0px;}
+.catWrap .studyTabCon .listCtr .cs_chapter_list{height:50px;line-height:50px;padding-top:0px;padding-bottom:0px;padding:0;}
+.catWrap .studyTabCon .inputPL{padding:10px 30px;overflow:hidden;}
+.catWrap .studyTabCon .inputPL textarea{width:343px; margin-bottom:10px;}
+.catWrap .studyTabCon .inputPL .tipText{color:#cccccc;}
+.catWrap .studyTabCon .inputPL .inp{}
+.catWrap .studyTabCon .inputPL .addTime{line-height:30px;}
+.catWrap .studyTabCon .listPL{overflow:hidden;margin-right:0px; border-top:1px solid #e5e5e5;}
+.catWrap .studyTabCon .listQA{overflow:hidden;margin-right:0px;}
+.catWrap .studyTabCon .Tab{height:30px;line-height:30px;padding:0px 30px;overflow:hidden;padding-bottom:5px; }
+.catWrap .studyTabCon .Tab li{float:left;padding:0px 0px;cursor:pointer;font-size:16px;}
+.catWrap .studyTabCon .Tab li.Cur{color:#48a2fd;}
+.catWrap .studyTabCon .Tab span{padding:0px 10px;font-size:12px; color:#999999;font-weight:lighter;}
+.catWrap .studyTabCon .TabCon{display:none}
+.catWrap .studyTabCon .TabCon dl{border-bottom:1px dashed #e5e5e5;padding:10px 30px 10px 30px;}
+.catWrap .studyTabCon .TabCon dl dt {line-height:25px;}
+.catWrap .studyTabCon .TabCon dl dt .name{font-size:14px;color:#ff9000;}
+.catWrap .studyTabCon .TabCon dl dt .teach{border:1px solid #ff9000;color:#ff9000;font-size:12px;/*width:34px;*/height:16px;line-height:16px;text-align:center;margin-left:5px;margin-top:4px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;padding:0 2px;*overflow:visible;}
+.catWrap .studyTabCon .TabCon dl dt .time{font-size:12px;color:#b5b5b5;}
+.catWrap .studyTabCon .TabCon dl dt .time i.fa{margin-right:5px;font-size:16px;position:relative;top:1px;}
+.catWrap .studyTabCon .TabCon dl dd .Con{line-height:28px;font-size:14px;color:#333;}
+.catWrap .studyTabCon .TabCon dl dd .Con i.fa{color:#b5b5b5;margin-right:10px;}
+.catWrap .studyTabCon .TabCon dl dd .Con i.fa:hover{color:#3a98f0;}
+.catWrap .studyTabCon .TabCon dl dd .data{color:#b5b5b5;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr i.fa{color:#b5b5b5;margin-right:3px;font-size:14px;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr .blueCur i.fa{ color:#177bbb;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr .fl{margin-left:10px;color:#b5b5b5;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr .fl a{color:#b5b5b5;}
+.catWrap .studyTabCon .TabCon dl dd .other .fr .del{display:block}
+.catWrap .studyTabCon .TabCon dl dd .other .notes i.fa{font-size:14px;}
+.catWrap .studyTabCon .TabCon dl dd .other .notes .fl{/*margin-left:18px;*/}
+.catWrap .studyTabCon .TabCon dl dd .other .fr span:hover i.fa{color:#3a98f0;}
+.catWrap .studyTabCon .TabCon dl:hover dd .other .fr .del{display:block}
+.catWrap .studyTabCon .TabCon dl dt .time i.fa:hover{color:#3a98f0;}
+.catWrap .studyTabCon .TabCon .courseMore{height:40px;line-height:40px;font-size:14px;background:none;position:relative;}
+.catWrap .studyTabCon .TabCon .courseMore .rotateMore{position:absolute;left:50%;/*margin-left:34px;*/ display:none}
+
+.blueCur i {color:#3a98f0;}
+
+.catWrap .grayTool a{color:#b5b5b5;padding-top:0px;float:left;margin-top:-5px;}
+.catWrap .grayTool i.fa{margin-right:5px;}
+.catWrap .grayTool a:hover{color:#177bbb;}
+.fa-rotate-30{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform: rotate(40deg);-ms-transform: rotate(40deg);transform: rotate(40deg);}
+
+.catWrap .QACon{background:#ffffff;width:100%;height:100%;position:absolute;left:0px;top:0px;z-index:100;}
+.catWrap .QACon .QAtitle dl{border-bottom:0px;padding-bottom:0px;}
+.catWrap .QACon .QAtitle dl:hover{background:none;}
+.catWrap .QACon .QAtitle dl dd .Con{font-size:16px;color:#333333;}
+.catWrap .QAInfo .inputPL textarea{width:343px;}
+.termTool li{ float:left; position:relative;}
+.termTool a{ height:60px; line-height:60px; padding:0 20px; color:#333;border-right:1px solid #ebebeb;}
+.termTool a.br0{border-right:0;}
+.termTool li:hover a,.termTool li.cur a{ color:#177bbb;}
+.termTool li.cur i{left:10px; bottom:0; width:50px; height:3px; background:#177bbb;}
+
+/*资源管理右侧功能菜单*/
+.RightTool .Share,.RightTool .Order{height:53px;line-height:53px;}
+
+.catWrap .documOrder .studyTab li,.catWrap .otherShare .studyTab li{width:auto;margin:0 30px;}
+.documOrder .listOrd li,.otherShare .listSha li,.otherCatalog .listCata .nocataList li{height:60px;line-height:60px;border-bottom:1px dashed #ebebeb;padding:0 30px;cursor:pointer;} 
+.otherCatalog .listCata .nocataList li {height:50px;line-height:50px; padding:0 30px;}
+.documOrder .listOrd li:hover, .otherShare .listSha li:hover,.otherCatalog .listCata .nocataList li:hover{background:#f3fafe;}
+.documOrder .listOrd li span,.otherShare .listSha li span.tit,.otherCatalog .listCata .nocataList li span.tit{font-size:16px;color:#333;margin-left:10px;}
+.documOrder .listOrd li em{float:left;display:inline;width:20px;height:20px;line-height:20px;background:#ebebeb;border-radius:3px;text-align:center;color:#999;margin-top:20px;}
+.documOrder .listOrd li em.Col{background:#58abe1;color:#fff;}
+.documOrder .listOrd li:hover span,.otherShare .listSha li:hover span.tit,.otherCatalog .listCata .nocataList li:hover  span.tit{/*color:#177bbb;*/}
+
+.otherShare .listSha .sideBar_init,.documOrder .listOrd .sideBar_init{padding-top:250px;}
+.otherShare .listSha li span.bs i{color:#58abe1;}
+.otherCatalog .listCata .nocataList li span.bs i {color:#177bbb;}
+
+.resIcons a:hover,.resIcons a:hover i{color:#177bbb;}
+.rightGN .collect,.resIcons .collect,.rightGN .collect i,.resIcons .collect i,#collect .collect i{color:#177bbb;}
+
+
+.mnav { height:38px; position:relative;}
+.mnavLine { position:absolute; left:0; bottom:0; width:100%; height:1px; background:#cfcfcf; line-height:1px; font-size:1px;}
+.mnav ul {float:left; position:relative;}
+.mnav li {float:left; display:inline; margin:0 20px 0 0; height:38px; line-height:35px; cursor:pointer;}
+.mnav li a {/*font-size:14px;*/}
+.mnav .cur a { color:#177bbb;}
+.mnav li span{padding:0 10px;}
+.mnav .cur span {border-bottom:3px #177bbb solid;float:left; height:35px;}
+.maMore {line-height:40px; position:relative; margin-left:38px; padding-right:16px;}
+.maMore i {right:0; top:12px;}
+
+
+.reply_con:hover .replyIcons .fr i.fa{color:#3a98f0;}
+.reply_con .dis .fr i.fa,.reply_con:hover .dis .fr i.fa{color:#ccc;}
+.bg_line{ background:url(../images/bg_line.png) repeat-y;}
+.agree i {color:#999;}
+.blueCur i {color:#177bbb;}
+.agreeSub i {color:#3a98f0;}
+.agreeClick i,.reply_con:hover .replyIcons .fr .agreeClick i.fa {color:#ccc;}
+
+.wordsLimit{right:10px;bottom:5px;font-size:14px;color:#ccc;}
+.toggleOnBtn,.toggleOnBtn i{color:#499ad1;}
+.toggleOffBtn,.toggleOffBtn i{color:#ccc;}
+
+.allReply{margin:10px 10px 0;}
+.allReply .reply_con:hover{background:#f3fafe;}
+.replyIcons i.HL:hover,.replyIcons a.HL:hover{color:#58abe1;}
+.replyIcons i.hL:hover,.replyIcons a.hL:hover{color:#58abe1;}
+.replyIcons a.defaultHand:hover{cursor:default;}
+.sD_tea_box{width:98.1%;height:140px;}
+.res_brif p{text-indent:2em;line-height:28px;}
+.sD_comments{background:#f8f8f8;border:1px solid #f1f1f1;}
+.sD_con{padding:5px 0 10px 0;}
+.sD_comments em{width:18px;height:9px;background:url("../images/sD_xiaosanjiao.png") no-repeat;right:10px;top:-9px;z-index:10;}
+.sD_comments .tea{height:28px;line-height:28px;width:99%;color:#333;padding:0 5px;margin:5px 0;}
+.addComments{width:75%;}
+.commentBtn{height:30px;line-height:30px;}
+
+.lhNone {line-height:1;}
+#ntItemInputs .inputDiv{margin-right:10px;}
+.search_box .placeholderWrap span,.seniorSearch .placeholderWrap span { margin-top:-4px;}
+.search_box .placeholderWrap span {}
+.circleScore {width:60px; height:60px; border-radius:30px; background:#3a98f0; line-height:60px; text-align:center; font-size:24px; font-weight:bold; color:#FFF;}
+.viewWork {cursor:pointer;}
+.viewWork:hover i { color:#3a98f0;}
+.ordinalNumber {width:22px; height:22px; border-radius:5px; background:#3a98f0; line-height:22px; text-align:center; font-size:16px; font-weight:bold; color:#FFF; margin:3px 5px 0 0;}
+
+.btnLookMore {color:#0375E9;}

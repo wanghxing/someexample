@@ -1,0 +1,24 @@
+lms/lms_style.css : lms2.0原有样式文件
+
+resourse_view.css : lms2.0自适应页面样式文件 （此文件包含在lms_style.css里，若引lms的样式文件，此样式可不引）
+
+wisdom_lms_style.css : 智慧云项目复用LMS页面的配色样式文件
+
+---------------------
+
+multiDropCheck.css : 多级下拉多选样式
+
+multi-select.css  :多级下拉单选样式
+
+
+（注:multiDropCheck.css和 multi-select.css 以及它们对应的js 不能同时引用 ，要分开，会冲突）
+
+
+---------------------------
+
+style_HLSC.css： “华理双创”样式
+
+
+-----------------------------
+
+style_bak20180509.css  2018年5月份之前所用样式(静态页样式)
